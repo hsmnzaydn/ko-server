@@ -16,7 +16,7 @@ module.exports = {
 
 
 async function getLotteries(req, res, next) {
-    lotterySchema.find().then(lotteries => {
+    lotterySchema.find({},['createdDate','endDate','winner','_id','header','description']).then(lotteries => {
         model={isSuccess:true,statusCode:200}
         model.lotteries=lotteries.reverse();
         res.status(200).send(model);
@@ -27,7 +27,7 @@ async function getLotteryDetail(req, res, next) {
     var lotteryId = req.params.lotteryId;
 
     lotterySchema.findOne({_id: lotteryId}).populate({
-        path: 'participants'
+        path: 'participants',select:['nickname']
     })
         .then(lottery => {
             model={isSuccess:true,statusCode:200}
