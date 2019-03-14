@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/components/entry/entry-controller.js" line="65" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="88" lean-forward="true" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/entry/enums.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>passport.in</find>
+      <find>passport.sessi</find>
+      <find>/register</find>
+      <find>vendor</find>
+      <find>js</find>
+      <find>rende</find>
+      <find>ınform</find>
+      <find>tables</find>
+      <find>Tables</find>
+      <find>Forms</find>
+      <find>Basic Form Elements</find>
+      <find>Disabled Form States</find>
+      <find>servers.</find>
+      <find>public</find>
+      <find>unregister</find>
+      <find>getIntermediaries</find>
+      <find>witho</find>
+      <find>agre</find>
+      <find>md5</find>
+      <find>bod</find>
+      <find>res.userId</find>
+      <find>global.model</find>
+      <find>model.</find>
+      <find>process.env.</find>
+      <find>PORT</find>
+      <find>entryEnums.</find>
+      <find>entryEnums.entryStatusEnum.CONFIRME</find>
+      <find>UNCONFIRMED_ENTRY_TITLE</find>
+      <find>entry</find>
+      <find>model</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/components/promotion/model/promotion-model.js" />
+        <option value="$PROJECT_DIR$/components/coin/model/coin-model.js" />
+        <option value="$PROJECT_DIR$/views/add-promotions.ejs" />
+        <option value="$PROJECT_DIR$/views/add-servers.ejs" />
+        <option value="$PROJECT_DIR$/views/edit-promotions.ejs" />
+        <option value="$PROJECT_DIR$/views/edit-servers.ejs" />
+        <option value="$PROJECT_DIR$/views/entry-edit.ejs" />
+        <option value="$PROJECT_DIR$/views/intermediaris.ejs" />
+        <option value="$PROJECT_DIR$/views/promotions.ejs" />
+        <option value="$PROJECT_DIR$/views/send-notification.ejs" />
+        <option value="$PROJECT_DIR$/views/users-edit.ejs" />
+        <option value="$PROJECT_DIR$/views/agreement.ejs" />
+        <option value="$PROJECT_DIR$/components/agreement/agreement-controller.js" />
+        <option value="$PROJECT_DIR$/controller/forget-password-controller.js" />
+        <option value="$PROJECT_DIR$/Utils/Utility.js" />
+        <option value="$PROJECT_DIR$/views/users.ejs" />
+        <option value="$PROJECT_DIR$/views/servers.ejs" />
+        <option value="$PROJECT_DIR$/views/bildirimler.ejs" />
+        <option value="$PROJECT_DIR$/components/intermediaris/intermediaris-controller.js" />
+        <option value="$PROJECT_DIR$/controller/login-controller.js" />
+        <option value="$PROJECT_DIR$/views/login.ejs" />
+        <option value="$PROJECT_DIR$/components/notification/notification-controller.js" />
+        <option value="$PROJECT_DIR$/components/promotion/promotion-controller.js" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/views/navigation.html" />
+        <option value="$PROJECT_DIR$/views/lotteries.ejs" />
+        <option value="$PROJECT_DIR$/components/user/user-controller.js" />
+        <option value="$PROJECT_DIR$/views/add-lotteries.ejs" />
+        <option value="$PROJECT_DIR$/components/lottery/model/lottery-model.js" />
+        <option value="$PROJECT_DIR$/views/edit-lotteries.ejs" />
+        <option value="$PROJECT_DIR$/routers/admin_routers.js" />
+        <option value="$PROJECT_DIR$/components/server/model/server-model.js" />
+        <option value="$PROJECT_DIR$/components/report/model/report-model.js" />
+        <option value="$PROJECT_DIR$/views/entries.ejs" />
+        <option value="$PROJECT_DIR$/components/report/report-controller.js" />
+        <option value="$PROJECT_DIR$/views/reports.ejs" />
+        <option value="$PROJECT_DIR$/Utils/Constants.js" />
+        <option value="$PROJECT_DIR$/components/user/model/user_model.js" />
+        <option value="$PROJECT_DIR$/components/notification/model/notification-model.js" />
+        <option value="$PROJECT_DIR$/routers/api_routers.js" />
+        <option value="$PROJECT_DIR$/controller/interceptor.js" />
+        <option value="$PROJECT_DIR$/components/entry/model/entry-model.js" />
+        <option value="$PROJECT_DIR$/process.env" />
+        <option value="$PROJECT_DIR$/components/server/server-controller.js" />
+        <option value="$PROJECT_DIR$/components/lottery/lottery-controller.js" />
+        <option value="$PROJECT_DIR$/controller/register-controller.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/components/entry/entry-controller.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="40" />
+    <option name="width" value="1883" />
+    <option name="height" value="1083" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="agreement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="coin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="intermediaris" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="lottery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="lottery" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="setting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/auth" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="D:\Projects\NodeJs\knight-e-commerce-server\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/entry" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.www">
+    <configuration name="www" type="NodeJSConfigurationType" path-to-node="/usr/bin/node" nameIsGenerated="true" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser start="true" url="http://localhost:8080/admin" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="DockerCompose">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="buildOnly" value="true" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="DockerCompose">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Node.js.www" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="" />
+      <created>1546683702680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546683702680</updated>
+      <workItem from="1546683706095" duration="993000" />
+      <workItem from="1546698263222" duration="64000" />
+      <workItem from="1547236426537" duration="5750000" />
+      <workItem from="1548858381216" duration="188000" />
+      <workItem from="1548867507166" duration="102000" />
+      <workItem from="1548867907966" duration="2000" />
+      <workItem from="1548873219187" duration="1789000" />
+      <workItem from="1548880222747" duration="1121000" />
+      <workItem from="1548881522069" duration="4662000" />
+      <workItem from="1548919347434" duration="607000" />
+      <workItem from="1548961306427" duration="4531000" />
+      <workItem from="1549028733132" duration="378000" />
+      <workItem from="1549111189251" duration="3443000" />
+      <workItem from="1549189914980" duration="15057000" />
+      <workItem from="1549557885956" duration="2591000" />
+      <workItem from="1549561087223" duration="14427000" />
+      <workItem from="1550389474824" duration="1071000" />
+      <workItem from="1550393218714" duration="1746000" />
+      <workItem from="1550397839532" duration="8726000" />
+      <workItem from="1550408631362" duration="5356000" />
+      <workItem from="1550419406281" duration="284000" />
+      <workItem from="1550924633978" duration="8270000" />
+      <workItem from="1550947090913" duration="7028000" />
+      <workItem from="1550993289959" duration="2799000" />
+      <workItem from="1551126763886" duration="1749000" />
+      <workItem from="1551190457802" duration="2145000" />
+      <workItem from="1551340374160" duration="988000" />
+      <workItem from="1551525260892" duration="2316000" />
+      <workItem from="1551638760218" duration="5112000" />
+      <workItem from="1551695023204" duration="6271000" />
+      <workItem from="1551707084416" duration="2284000" />
+      <workItem from="1551768111699" duration="2932000" />
+      <workItem from="1551947093279" duration="188000" />
+      <workItem from="1552252062525" duration="34000" />
+      <workItem from="1552303444048" duration="1198000" />
+      <workItem from="1552314189567" duration="1683000" />
+      <workItem from="1552374615016" duration="2058000" />
+      <workItem from="1552385308485" duration="4281000" />
+      <workItem from="1552401638371" duration="625000" />
+      <workItem from="1552417043544" duration="1847000" />
+      <workItem from="1552561204079" duration="5301000" />
+    </task>
+    <task id="LOCAL-00001" summary="Admin paneli eklendi ve birkaç servis yazıldı">
+      <created>1548886142709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548886142709</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Kullanıcı editleme ve gönderi listeleme özellikleri eklendi">
+      <created>1548965678097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548965678097</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Promosyonlar ve bildirimler bitti">
+      <created>1549227702007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549227702007</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ek servisler eklendi">
+      <created>1549570820672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549570820672</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ek servisler eklendi">
+      <created>1549576728445</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1549576728445</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Server get entries düzeltildi">
+      <created>1550394452490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550394452490</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Eksikler eklendi">
+      <created>1550404556577</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550404556577</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Tüm entryleri ekleme özelliği eklendi">
+      <created>1550406370712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550406370712</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Tüm entryleri ekleme özelliği eklendi">
+      <created>1550406524971</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550406524971</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Docker fileler eklendi">
+      <created>1550408957596</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1550408957596</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Docker fileler eklendi">
+      <created>1550410203099</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550410203099</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Docker fileler eklendi">
+      <created>1550411324612</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550411324613</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Çekiliş&#10;    - Admin Paneli&#10;      - Çekiliş oluşturma +&#10;      - Çekiliş Düzenleme +&#10;      - Çekiliş Silme +&#10;      - Çekilişe katılanları indirme +&#10;    - API&#10;      - Çekiliş listesini çekme + &#10;      - Çekilişe katılma    +&#10;&#10;Kullanıcı &#10;    - API&#10;        - Get User servisinin endpointinin sonuna &quot;/detail&quot; eklendi. Postmande &quot;Get User&quot; servisine eklendi değişiklik&#10;        - Get Me servisinin endpointi &quot;secure/me&quot; den &quot;secure/users/me&quot; olarak değiştirildi&#10;        - Get Me servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;        - Get User servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;Gönderi&#10;    - API&#10;        - Gönderi silme servisi eklendi">
+      <created>1550932914044</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550932914044</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Çekiliş&#10;    - Admin Paneli&#10;      - Çekiliş oluşturma +&#10;      - Çekiliş Düzenleme +&#10;      - Çekiliş Silme +&#10;      - Çekilişe katılanları indirme +&#10;    - API&#10;      - Çekiliş listesini çekme + &#10;      - Çekilişe katılma    +&#10;&#10;Kullanıcı &#10;    - API&#10;        - Get User servisinin endpointinin sonuna &quot;/detail&quot; eklendi. Postmande &quot;Get User&quot; servisine eklendi değişiklik&#10;        - Get Me servisinin endpointi &quot;secure/me&quot; den &quot;secure/users/me&quot; olarak değiştirildi&#10;        - Get Me servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;        - Get User servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;Gönderi&#10;    - API&#10;        - Gönderi silme servisi eklendi">
+      <created>1550949222433</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1550949222433</updated>
+    </task>
+    <task id="LOCAL-00015" summary="İstenn değişilikkler sağlandı">
+      <created>1550993437258</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1550993437258</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- Kayıt olurken Profilde phoneNumber gözüksün gözükmesin parametresi eklenecek&#10;    - Postmane &quot;isShowPhoneNumber&quot; parametresi registerda bodye eklendi. Kullanıcı objesi oluşurken default: true geliyor&#10;&#10;- Raporlarken hangi entry olduğu görünmüyor ? Servis sadece heder message alıyor.&#10;    - Anlamadım&#10;&#10;- Serverdan dönen hatalar mantıklı olmalı. Error yazanlar var.&#10;    - Tüm errorlar tek bir yerden handler ediliyor. Her servis için teker teker error handler yapılmıyor. Lakin exception message kısmına eklenebilir.&#10;        Örn: {code:500, message: _id cannot cast } vb.&#10;- Red yediğinde otomatik Notification göndersin (Düzenleyip gönderin vs diye)&#10;    - Admin gönderiyi Unconfirmed yapınca kullanıcıya &quot;Gönderiniz Kabul Edilmedi&quot; titlesi ve &quot;Lütfen gönderinizi düzenleyin&quot; descriptionu gönderiliyor&#10;- Bildirim entegrasyonu yapılacak&#10;    - Daha yapılmadı hangi durumlarda notification gidecek? Tüm kullanıcılar için farklı farklı notificationlar mı olacak? Notification count olacak mı?&#10;- Çekiliş participants id geliyor - kullanıcı bilgileri gelmeli (nickname yeterli galiba)&#10;    - Çekiliş ekranında &quot;Katılanlara&quot; tıklayınca inen CSV dosyasında artık kullanıcıların adı ve soyadı yerine nicknamesi var">
+      <created>1551128432021</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1551128432021</updated>
+    </task>
+    <task id="LOCAL-00017" summary="-Raporlarda entry için raport oluşturulacak ve admin panelinde gönderiyi gör seçeneği olacak gönderi düzenle açılacak&#10;-Errorlarda message kısmında &quot;Error&quot; yazmasın &quot;Sunucuda bir hata oluştu&quot; diye bir hata dönsün&#10;- Bildirimler&#10;    - GÖnderi confirmed ve unconfirmed durumlarda gönderilecek&#10;    - Notification count olmayacak&#10;&#10;&#10;Bug:&#10;    - Kullanıcı birden fazla kez çekilişe katılabiliyor. Engelle &#10;    - Çekilişe katılanlar için sadece id geliyor nickname gelsin yeter&#10;    - Entry Detail servisi eklendi">
+      <created>1551526970093</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1551526970094</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Buglar çözüldü">
+      <created>1551771827289</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1551771827290</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="131997000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="40" y="0" width="1883" height="1083" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28209278" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42604166" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6479167" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.3294979" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.490625" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3294979" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/views/octopus" />
+    </ignored-roots>
+    <MESSAGE value="Admin paneli eklendi ve birkaç servis yazıldı" />
+    <MESSAGE value="Kullanıcı editleme ve gönderi listeleme özellikleri eklendi" />
+    <MESSAGE value="Promosyonlar ve bildirimler bitti" />
+    <MESSAGE value="Ek servisler eklendi" />
+    <MESSAGE value="Server get entries düzeltildi" />
+    <MESSAGE value="Eksikler eklendi" />
+    <MESSAGE value="Tüm entryleri ekleme özelliği eklendi" />
+    <MESSAGE value="Docker fileler eklendi" />
+    <MESSAGE value="Çekiliş&#10;    - Admin Paneli&#10;      - Çekiliş oluşturma +&#10;      - Çekiliş Düzenleme +&#10;      - Çekiliş Silme +&#10;      - Çekilişe katılanları indirme +&#10;    - API&#10;      - Çekiliş listesini çekme + &#10;      - Çekilişe katılma    +&#10;&#10;Kullanıcı &#10;    - API&#10;        - Get User servisinin endpointinin sonuna &quot;/detail&quot; eklendi. Postmande &quot;Get User&quot; servisine eklendi değişiklik&#10;        - Get Me servisinin endpointi &quot;secure/me&quot; den &quot;secure/users/me&quot; olarak değiştirildi&#10;        - Get Me servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;        - Get User servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;Gönderi&#10;    - API&#10;        - Gönderi silme servisi eklendi" />
+    <MESSAGE value="İstenn değişilikkler sağlandı" />
+    <MESSAGE value="- Kayıt olurken Profilde phoneNumber gözüksün gözükmesin parametresi eklenecek&#10;    - Postmane &quot;isShowPhoneNumber&quot; parametresi registerda bodye eklendi. Kullanıcı objesi oluşurken default: true geliyor&#10;&#10;- Raporlarken hangi entry olduğu görünmüyor ? Servis sadece heder message alıyor.&#10;    - Anlamadım&#10;&#10;- Serverdan dönen hatalar mantıklı olmalı. Error yazanlar var.&#10;    - Tüm errorlar tek bir yerden handler ediliyor. Her servis için teker teker error handler yapılmıyor. Lakin exception message kısmına eklenebilir.&#10;        Örn: {code:500, message: _id cannot cast } vb.&#10;- Red yediğinde otomatik Notification göndersin (Düzenleyip gönderin vs diye)&#10;    - Admin gönderiyi Unconfirmed yapınca kullanıcıya &quot;Gönderiniz Kabul Edilmedi&quot; titlesi ve &quot;Lütfen gönderinizi düzenleyin&quot; descriptionu gönderiliyor&#10;- Bildirim entegrasyonu yapılacak&#10;    - Daha yapılmadı hangi durumlarda notification gidecek? Tüm kullanıcılar için farklı farklı notificationlar mı olacak? Notification count olacak mı?&#10;- Çekiliş participants id geliyor - kullanıcı bilgileri gelmeli (nickname yeterli galiba)&#10;    - Çekiliş ekranında &quot;Katılanlara&quot; tıklayınca inen CSV dosyasında artık kullanıcıların adı ve soyadı yerine nicknamesi var" />
+    <MESSAGE value="-Raporlarda entry için raport oluşturulacak ve admin panelinde gönderiyi gör seçeneği olacak gönderi düzenle açılacak&#10;-Errorlarda message kısmında &quot;Error&quot; yazmasın &quot;Sunucuda bir hata oluştu&quot; diye bir hata dönsün&#10;- Bildirimler&#10;    - GÖnderi confirmed ve unconfirmed durumlarda gönderilecek&#10;    - Notification count olmayacak&#10;&#10;&#10;Bug:&#10;    - Kullanıcı birden fazla kez çekilişe katılabiliyor. Engelle &#10;    - Çekilişe katılanlar için sadece id geliyor nickname gelsin yeter&#10;    - Entry Detail servisi eklendi" />
+    <MESSAGE value="Buglar çözüldü" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buglar çözüldü" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/agreement/agreement-controller.js</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/report/report-controller.js</url>
+          <line>12</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
+          <line>60</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
+          <line>62</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/server/server-controller.js</url>
+          <line>71</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>req.headers['authorizationkey']</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>installedApplication.udid</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.server.toString()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.server</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSON.stringify(entry)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSON.stringify(entryObject)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.body.price</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.price</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry.asdf</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res.userId.toString()</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/bildirimler.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/intermediaris/intermediaris-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31470">
+          <caret line="2098" column="9" selection-start-line="2098" selection-start-column="9" selection-end-line="2098" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/promotion/promotion-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/intermediaris/model/intermediaris-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/servers.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="46" column="27" lean-forward="true" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/add-promotions.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="16" lean-forward="true" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/1550929998439.csv" />
+    <entry file="file://$PROJECT_DIR$/views/lotteries.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="84" column="70" selection-start-line="84" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/add-lotteries.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/edit-lotteries.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="63" column="108" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/server/model/server-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/model/installed_application_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/firebase.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/admin_routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="35" column="75" lean-forward="true" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/report/model/report-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/entries.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="89" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/reports.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/lottery/model/lottery-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/notification/model/notification-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/713ea7f0-2b15-11e9-924b-6dc65dd673aa.png" />
+    <entry file="file://$PROJECT_DIR$/public/resources/9a8da3a0-3e6a-11e9-979a-11fcad7fbcfa.png" />
+    <entry file="file://$PROJECT_DIR$/public/resources/01cce510-3292-11e9-bdca-0fcf9741b154.png" />
+    <entry file="file://$PROJECT_DIR$/public/resources/0a8a6f00-3e6e-11e9-92c4-a32716de8093.png" />
+    <entry file="file://$PROJECT_DIR$/public/resources/4efa0190-3e6f-11e9-86f5-e72dec96df42.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/report/report-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/entry/model/entry-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="83" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/lottery/lottery-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/register-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/entry/enums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="88" lean-forward="true" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+version: "2"
+services:
+  db:
+    image: aashreys/mongo-auth:latest
+    environment:
+      - AUTH=yes
+      - MONGODB_ADMIN_USER=komobile
+      - MONGODB_ADMIN_PASS=KoMobile2019!*
+      - MONGODB_APPLICATION_DATABASE=komobile
+      - MONGODB_APPLICATION_USER=komobile
+      - MONGODB_APPLICATION_PASS=KoMobile2019!*
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+
