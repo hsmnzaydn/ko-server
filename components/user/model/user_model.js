@@ -14,7 +14,7 @@ var user = new Schema(
         registerServer:{type:mongoose.Schema.Types.ObjectId, ref:"Server",default:null},
         coin:{type:mongoose.Schema.Types.ObjectId, ref:"Coin",default:null},
         smsCode:{type:String},
-        isShowPhoneNumber:{type:Boolean,default:true},
+        isShowPhoneNumber:{type:Boolean,default:false},
         entries:[
             {type:mongoose.Schema.Types.ObjectId, ref:"Entry",default:null}
         ],
