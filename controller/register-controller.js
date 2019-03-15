@@ -53,7 +53,7 @@ async function register(req, res, next) {
                 surname:surname,
                 coin: coin,
                 isShowPhoneNumber:isShowPhoneNumber,
-                smsCode: global.createRandomCode()
+                smsCode: global.sendSMSFromCheckMobiToUser(phoneNumber)
             })
 
             console.log("SMS code:", user.smsCode)
