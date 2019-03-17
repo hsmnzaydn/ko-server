@@ -1,57 +1,59 @@
-const notificationSchema=require('./model/notification-model');
-      firebase=require('../../Utils/firebase')
-      Constant=require('../../Utils/Constants')
+const notificationSchema = require('./model/notification-model');
+firebase = require('../../Utils/firebase');
+Constant = require('../../Utils/Constants');
+userSchema = require('../user/model/user_model');
 
-module.exports={
+module.exports = {
     getNotificationsAdmin,
     createNotifications,
     getNotifications
 }
 
-async function getNotificationsAdmin(req,res,next) {
-    notificationSchema.find().then(notifications=>{
-        res.render('bildirimler',{
-            notifications:notifications
+async function getNotificationsAdmin(req, res, next) {
+    notificationSchema.find().then(notifications => {
+        res.render('bildirimler', {
+            notifications: notifications
         })
     })
 }
 
-async function getNotifications(req,res,next) {
-    notificationSchema.find().then(notifications=>{
-        var notificationList=[];
+async function getNotifications(req, res, next) {
+    var userId = res.userId;
 
 
-        notifications.map(notification=>{
-            var withOutReferanceNotification = JSON.parse(JSON.stringify(notification));
-
-            delete withOutReferanceNotification.users
-            notificationList.push(withOutReferanceNotification)
-        })
-
-        return notificationList;
-
-    }).then(notifications=>{
-        model={isSuccess:true,statusCode:200}
-        model.notifications=notifications;
-        res.status(200).send(global.model)
+    userSchema.findOne({_id: userId},['notifications']).
+    populate({
+        path:'notifications',select:['title','message']
+    }).
+    then(user=>{
+        model = {isSuccess: true, statusCode: 200};
+        model.notifications = user.notifications;
+        res.status(200).send(model)
     }).catch(next)
+
+
+
 }
 
-async function createNotifications(req,res,next) {
-    if(req.method=="GET"){
+async function createNotifications(req, res, next) {
+    if (req.method == "GET") {
         res.render('send-notification')
-    }else if(req.method=="POST"){
-        var title=req.body.header
-        var message=req.body.message
+    } else if (req.method == "POST") {
+        var title = req.body.header
+        var message = req.body.message
 
-        var notification=new notificationSchema({
-            title:title,
-            message:message
+        var notification = new notificationSchema({
+            title: title,
+            message: message
+        });
+
+        userSchema.update({ $push: { notifications: notification._id} }).then(users=>{
+            notification.save().then(notification => {
+                firebase.sendNotificationToAll(title, message)
+                res.redirect('/admin/notifications')
+            }).catch(next)
         })
-        notification.save().then(notification=>{
-            firebase.sendNotificationToAll(title,message)
-            res.redirect('/admin/notifications')
-        }).catch(next)
+
 
     }
 }

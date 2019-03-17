@@ -4,7 +4,35 @@
     <bookmark url="file://$PROJECT_DIR$/components/entry/entry-controller.js" line="65" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="" />
+    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/lottery/lottery-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/lottery/lottery-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/notification/notification-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/notification/notification-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/15b6c6b0-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/19428580-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/1db2ce50-440a-11e9-ac2b-0b7a0f4b4467.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/223308e0-3e70-11e9-9b87-cd1879073321.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/37f33e40-3e73-11e9-8a59-b951e97667a6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/3c536b70-3e70-11e9-a80a-1badff2d662d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/4efa0190-3e6f-11e9-86f5-e72dec96df42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/5bd15f40-3e73-11e9-b58e-2f5b4015c767.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/5cb5fa40-3e70-11e9-b079-cb3a5889591a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/654327f0-3e70-11e9-851b-bdb86544f865.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/6a2ac2b0-3e6f-11e9-a8a8-2b95fa397387.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/780d0810-3e70-11e9-bc5d-592a6eccd25a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/7a1c7fc0-3e73-11e9-94cd-1b7c8e97b96c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/82accb30-4649-11e9-9f84-83d3ea29139b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/86482dc0-3e6f-11e9-a098-b1ca9f1872bc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/895ad2b0-3e74-11e9-9fb7-09f3155edaec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/8d4465c0-3e70-11e9-81a5-49769fce4958.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/8d5eeb40-3e73-11e9-94cd-1b7c8e97b96c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/997b2ff0-3e6f-11e9-a098-b1ca9f1872bc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/9a665670-3e73-11e9-94cd-1b7c8e97b96c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/ab7101c0-3e70-11e9-8ed4-4d93ebea4494.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/b8f67690-3e70-11e9-832b-cde85680b481.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/bc6186a0-3e73-11e9-9726-d97fa13eea1e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/fab05300-4648-11e9-9f84-83d3ea29139b.png" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,65 +45,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="316">
+              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/lottery/lottery-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
+        <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="88" lean-forward="true" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
+            <state relative-caret-position="246">
+              <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/entry/enums.js">
+        <entry file="file://$PROJECT_DIR$/Utils/firebase.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="300">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -92,9 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>passport.in</find>
-      <find>passport.sessi</find>
-      <find>/register</find>
       <find>vendor</find>
       <find>js</find>
       <find>rende</find>
@@ -122,6 +120,9 @@
       <find>UNCONFIRMED_ENTRY_TITLE</find>
       <find>entry</find>
       <find>model</find>
+      <find>populate</find>
+      <find>pop</find>
+      <find>res.user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,7 +153,6 @@
         <option value="$PROJECT_DIR$/components/intermediaris/intermediaris-controller.js" />
         <option value="$PROJECT_DIR$/controller/login-controller.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
-        <option value="$PROJECT_DIR$/components/notification/notification-controller.js" />
         <option value="$PROJECT_DIR$/components/promotion/promotion-controller.js" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
@@ -178,10 +178,11 @@
         <option value="$PROJECT_DIR$/components/entry/model/entry-model.js" />
         <option value="$PROJECT_DIR$/process.env" />
         <option value="$PROJECT_DIR$/components/server/server-controller.js" />
-        <option value="$PROJECT_DIR$/components/lottery/lottery-controller.js" />
         <option value="$PROJECT_DIR$/controller/register-controller.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/components/entry/entry-controller.js" />
+        <option value="$PROJECT_DIR$/components/notification/notification-controller.js" />
+        <option value="$PROJECT_DIR$/components/lottery/lottery-controller.js" />
       </list>
     </option>
   </component>
@@ -292,6 +293,17 @@
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
@@ -432,7 +444,11 @@
       <workItem from="1552385308485" duration="4281000" />
       <workItem from="1552401638371" duration="625000" />
       <workItem from="1552417043544" duration="1847000" />
-      <workItem from="1552561204079" duration="5301000" />
+      <workItem from="1552561204079" duration="6340000" />
+      <workItem from="1552591382398" duration="2206000" />
+      <workItem from="1552633176437" duration="2547000" />
+      <workItem from="1552680487674" duration="6016000" />
+      <workItem from="1552812005136" duration="5111000" />
     </task>
     <task id="LOCAL-00001" summary="Admin paneli eklendi ve birkaç servis yazıldı">
       <created>1548886142709</created>
@@ -560,23 +576,31 @@
       <option name="project" value="LOCAL" />
       <updated>1551771827290</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lottery bug çözüldü">
+      <created>1552592985161</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1552592985161</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131997000" />
+    <option name="totallyTimeSpent" value="148916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="0" width="1883" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28209278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23300971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42604166" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6479167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42604166" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.415625" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -650,7 +674,8 @@
     <MESSAGE value="- Kayıt olurken Profilde phoneNumber gözüksün gözükmesin parametresi eklenecek&#10;    - Postmane &quot;isShowPhoneNumber&quot; parametresi registerda bodye eklendi. Kullanıcı objesi oluşurken default: true geliyor&#10;&#10;- Raporlarken hangi entry olduğu görünmüyor ? Servis sadece heder message alıyor.&#10;    - Anlamadım&#10;&#10;- Serverdan dönen hatalar mantıklı olmalı. Error yazanlar var.&#10;    - Tüm errorlar tek bir yerden handler ediliyor. Her servis için teker teker error handler yapılmıyor. Lakin exception message kısmına eklenebilir.&#10;        Örn: {code:500, message: _id cannot cast } vb.&#10;- Red yediğinde otomatik Notification göndersin (Düzenleyip gönderin vs diye)&#10;    - Admin gönderiyi Unconfirmed yapınca kullanıcıya &quot;Gönderiniz Kabul Edilmedi&quot; titlesi ve &quot;Lütfen gönderinizi düzenleyin&quot; descriptionu gönderiliyor&#10;- Bildirim entegrasyonu yapılacak&#10;    - Daha yapılmadı hangi durumlarda notification gidecek? Tüm kullanıcılar için farklı farklı notificationlar mı olacak? Notification count olacak mı?&#10;- Çekiliş participants id geliyor - kullanıcı bilgileri gelmeli (nickname yeterli galiba)&#10;    - Çekiliş ekranında &quot;Katılanlara&quot; tıklayınca inen CSV dosyasında artık kullanıcıların adı ve soyadı yerine nicknamesi var" />
     <MESSAGE value="-Raporlarda entry için raport oluşturulacak ve admin panelinde gönderiyi gör seçeneği olacak gönderi düzenle açılacak&#10;-Errorlarda message kısmında &quot;Error&quot; yazmasın &quot;Sunucuda bir hata oluştu&quot; diye bir hata dönsün&#10;- Bildirimler&#10;    - GÖnderi confirmed ve unconfirmed durumlarda gönderilecek&#10;    - Notification count olmayacak&#10;&#10;&#10;Bug:&#10;    - Kullanıcı birden fazla kez çekilişe katılabiliyor. Engelle &#10;    - Çekilişe katılanlar için sadece id geliyor nickname gelsin yeter&#10;    - Entry Detail servisi eklendi" />
     <MESSAGE value="Buglar çözüldü" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buglar çözüldü" />
+    <MESSAGE value="Lottery bug çözüldü" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lottery bug çözüldü" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,13 +710,69 @@
           <line>71</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/server/server-controller.js</url>
+          <line>85</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/server/server-controller.js</url>
+          <line>90</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/server/server-controller.js</url>
+          <line>91</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/lottery/lottery-controller.js</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="Uri uri = Uri.parse(&quot;smsto:&quot; + number);     Intent i = new Intent(Intent.ACTION_SENDTO, uri);     i.setPackage(&quot;com.whatsapp&quot;);       startActivity(Intent.createChooser(i, &quot;&quot;));" language="JavaScript" />
+        <watch expression="req.headers['udid']" language="JavaScript" />
+        <watch expression="req.headers['authorizationkey']" language="JavaScript" />
+        <watch expression="userId" language="JavaScript" />
+        <watch expression="req" language="JavaScript" />
+        <watch expression="res.userId" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>res.userId</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>userId</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>req.headers['authorizationkey']</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.headers['udid']</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Uri uri = Uri.parse(&quot;smsto:&quot; + number);     Intent i = new Intent(Intent.ACTION_SENDTO, uri);     i.setPackage(&quot;com.whatsapp&quot;);       startActivity(Intent.createChooser(i, &quot;&quot;));</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -715,90 +796,9 @@
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>JSON.stringify(entryObject)</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.body.price</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>entry.price</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>entry.asdf</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>res.userId.toString()</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/bildirimler.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/intermediaris/intermediaris-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31470">
-          <caret line="2098" column="9" selection-start-line="2098" selection-start-column="9" selection-end-line="2098" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/login-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/promotion/promotion-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -894,9 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/firebase.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/routers/admin_routers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -950,27 +947,11 @@
     <entry file="file://$PROJECT_DIR$/public/resources/9a8da3a0-3e6a-11e9-979a-11fcad7fbcfa.png" />
     <entry file="file://$PROJECT_DIR$/public/resources/01cce510-3292-11e9-bdca-0fcf9741b154.png" />
     <entry file="file://$PROJECT_DIR$/public/resources/0a8a6f00-3e6e-11e9-92c4-a32716de8093.png" />
-    <entry file="file://$PROJECT_DIR$/public/resources/4efa0190-3e6f-11e9-86f5-e72dec96df42.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/4efa0190-3e6f-11e9-86f5-e72dec96df42.png" />
     <entry file="file://$PROJECT_DIR$/components/report/report-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -985,20 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="83" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/lottery/lottery-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1019,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/entry/enums.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1040,24 +1000,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+    <entry file="file://$PROJECT_DIR$/public/resources/b0a56790-4770-11e9-89e5-0769260a50e6.png" />
+    <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+        <state relative-caret-position="2940">
+          <caret line="196" column="19" selection-start-line="196" selection-start-column="19" selection-end-line="196" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/d6888050-4770-11e9-89e5-0769260a50e6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/abce0400-4772-11e9-9c22-7d7cf26bce3e.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/c1c38190-4772-11e9-9c22-7d7cf26bce3e.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/d825cab0-4772-11e9-9c22-7d7cf26bce3e.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/177d4e90-4773-11e9-9c22-7d7cf26bce3e.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/f95aaf90-4770-11e9-873e-8b932527b927.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="88" lean-forward="true" selection-start-line="30" selection-start-column="88" selection-end-line="30" selection-end-column="88" />
+        <state relative-caret-position="495">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
+    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+        <state relative-caret-position="274">
+          <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/login-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/lottery/lottery-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
         </state>
       </provider>
     </entry>
