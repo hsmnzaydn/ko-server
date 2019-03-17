@@ -224,14 +224,14 @@ async function sendNotification(req, res, next) {
 
 async function getMe(req, res, next) {
     var userId = res.userId.toString()
-    userSchema.findOne({_id: userId}).populate([{
-        path: 'entries'
+    userSchema.findOne({_id: userId},['nickname','surname','name']).populate([{
+        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
     }, {
         path: 'coin'
     }])
         .then(user => {
             var entries = [];
-            user.entries.map(entry => {
+            user.entries.map(async entry => {
                 if (entry.status == entryEnums.entryStatusEnum.CONFIRMED && !entry.isDisable) {
                     entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
                     entries.push(entry)
@@ -241,8 +241,7 @@ async function getMe(req, res, next) {
 
             return user
         }).then(user => {
-        model = {isSuccess: true, statusCode: 200}
-        model.user = user
-        res.status(200).send(model)
+
+        res.status(200).send(user)
     }).catch(next)
 }

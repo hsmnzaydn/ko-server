@@ -20,7 +20,7 @@ async function register(req, res, next) {
 
     userSchema.findOne({
         $or: [
-            {phoneNumner: phoneNumber},
+            {phoneNumber: phoneNumber},
             {nickname: nickname}
         ]
     }).then(function (user) {
@@ -75,7 +75,8 @@ async function register(req, res, next) {
     }).then(function () {
         res.status(200).send({
             code: 200,
-            message: 'OK'
+            message: 'OK',
+            authorizationKey:installedApplication._id
         })
     }).catch(function (err) {
         console.log(err)
@@ -115,8 +116,7 @@ async function verificationUser(req, res, next) {
                 user.save()
                 res.status(200).send({
                     code: 200,
-                    message: 'OK',
-                    secretKey: user.installedApplication._id
+                    message: 'OK'
                 })
             })
         }).catch(next)

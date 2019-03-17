@@ -124,6 +124,8 @@ async function getEntries(req, res, next) {
                 delete withOutReferanceEntry.creator.registerStatus
                 delete withOutReferanceEntry.creator.smsCode
                 delete withOutReferanceEntry.server
+                delete withOutReferanceEntry.creator.notifications
+
 
                 withOutReferanceEntry.entryImageUrl = global.addPathToImageList(entry.entryImageUrl)
 
