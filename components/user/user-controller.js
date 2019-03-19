@@ -122,11 +122,12 @@ async function getCoins(req, res, next) {
 
 async function getUser(req, res, next) {
     userSchema.findOne({
-        _id: req.params.userId
-    }).populate([{
-        path: 'coin'
+        _id: req.params.userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber']).populate([{
+        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
     }, {
-        path: 'entries'
+        path: 'coin',select:['value']
+    },{
+        path: 'registerServer',select:['name']
     }])
         .then(user => {
 
@@ -224,10 +225,12 @@ async function sendNotification(req, res, next) {
 
 async function getMe(req, res, next) {
     var userId = res.userId.toString()
-    userSchema.findOne({_id: userId},['nickname','surname','name']).populate([{
+    userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber']).populate([{
         path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
     }, {
-        path: 'coin'
+        path: 'coin',select:['value']
+    },{
+        path: 'registerServer',select:['name']
     }])
         .then(user => {
             var entries = [];

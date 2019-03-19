@@ -12,17 +12,19 @@
 global.ADMIN_BASE_PATH='/admin'
  
 // Startapplication alternatives
-global.WAIT_CODE=450;
-global.WAIT_MESSAGE="Please check your mail"
+global.EXIST_USER_CODE=450;
+global.EXIST_USER_MESSAGE="Zaten böyle bir kullanıcı bulunmaktadır. Lütfen şifrenizi ve telefon numaranızı kontrol ediniz"
 
  global.ERROR_SMS_CODE=451
  global.ERROR_SMS_MESSAGE="Yanlış sms kodunu girdiniz, lütfen kontrol ediniz"
 
 global.UNREGISTER_CODE=401;
-global.UNREGISTER_MESSAGE="Bu kullanıcı bulunamadı";
+global.UNREGISTER_MESSAGE="Kullanıcı adınız veya şifreniz yanlış";
 
 global.WAITING_VALIDATION_CODE=452;
-global.WAITING_VALIDATION_MESSAGE="Zaten böyle bir kullanıcı bulunmaktadır. Lütfen şifrenizi ve telefon numaranızı kontrol ediniz"
+global.WAITING_VALIDATION_MESSAGE="Hesabınızı doğrulamanız gerekmektedir";
+
+
 
 // Server Response alternatives
 global.OK_CODE=200;

@@ -63,11 +63,11 @@ async function register(req, res, next) {
             installedApplication.save()
             return user;
         } else {
-            res.status(global.WAITING_VALIDATION_CODE).send({
-                code: global.WAITING_VALIDATION_CODE,
-                message: global.WAITING_VALIDATION_MESSAGE
+            res.status(global.EXIST_USER_CODE).send({
+                code: global.EXIST_USER_CODE,
+                message: global.EXIST_USER_MESSAGE
             })
-            return Promise.reject(global.WAITING_VALIDATION_MESSAGE)
+            return Promise.reject(global.EXIST_USER_MESSAGE)
         }
     }).then(function (user) {
 

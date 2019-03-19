@@ -40,14 +40,14 @@ async function forgetPasswordStepTwo(req, res, next) {
         }
     }).then(status => {
         if (status) {
-            res.status(200).send({
+            res.status(global.OK_CODE).send({
                 code: global.OK_CODE,
                 message: global.OK_MESSAGE
             })
         } else {
-            res.status(500).send({
-                code: global.ERROR_CODE,
-                code: global.ERROR_MESSAGE
+            res.status(global.ERROR_SMS_CODE).send({
+                code: global.ERROR_SMS_CODE,
+                message: global.ERROR_SMS_MESSAGE
             })
         }
 
