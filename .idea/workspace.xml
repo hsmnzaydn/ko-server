@@ -7,12 +7,12 @@
     <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/coin/model/coin-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/coin/model/coin-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/server/server-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/server/server-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/user/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/user-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/forget-password-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/forget-password-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/register-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/register-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/15b6c6b0-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/19428580-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/19428580-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/setting/setting-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/1db2ce50-440a-11e9-ac2b-0b7a0f4b4467.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/223308e0-3e70-11e9-9b87-cd1879073321.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/37f33e40-3e73-11e9-8a59-b951e97667a6.png" beforeDir="false" />
@@ -35,6 +35,7 @@
       <change beforePath="$PROJECT_DIR$/public/resources/b8f67690-3e70-11e9-832b-cde85680b481.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/bc6186a0-3e73-11e9-9726-d97fa13eea1e.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/fab05300-4648-11e9-9f84-83d3ea29139b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api_routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api_routers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,35 +52,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="171" column="22" lean-forward="true" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+            <state relative-caret-position="385">
+              <caret line="261" column="27" lean-forward="true" selection-start-line="261" selection-start-column="27" selection-end-line="261" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
+        <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="404">
+              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/user/enums.js">
+        <entry file="file://$PROJECT_DIR$/components/setting/setting-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/register-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="320">
+              <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -87,26 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/login-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/forget-password-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="195">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -114,26 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/firebase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="790">
+              <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -150,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rende</find>
       <find>ınform</find>
       <find>tables</find>
       <find>Tables</find>
@@ -180,6 +144,7 @@
       <find>res.user</find>
       <find>WAIT_CODE</find>
       <find>status</find>
+      <find>SETTİ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/promotion/model/promotion-model.js" />
-        <option value="$PROJECT_DIR$/components/coin/model/coin-model.js" />
         <option value="$PROJECT_DIR$/views/add-promotions.ejs" />
         <option value="$PROJECT_DIR$/views/add-servers.ejs" />
         <option value="$PROJECT_DIR$/views/edit-promotions.ejs" />
@@ -225,27 +188,29 @@
         <option value="$PROJECT_DIR$/views/reports.ejs" />
         <option value="$PROJECT_DIR$/components/user/model/user_model.js" />
         <option value="$PROJECT_DIR$/components/notification/model/notification-model.js" />
-        <option value="$PROJECT_DIR$/routers/api_routers.js" />
         <option value="$PROJECT_DIR$/components/entry/model/entry-model.js" />
         <option value="$PROJECT_DIR$/components/entry/entry-controller.js" />
         <option value="$PROJECT_DIR$/components/notification/notification-controller.js" />
         <option value="$PROJECT_DIR$/components/lottery/lottery-controller.js" />
-        <option value="$PROJECT_DIR$/components/server/server-controller.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/process.env" />
         <option value="$PROJECT_DIR$/controller/login-controller.js" />
         <option value="$PROJECT_DIR$/controller/forget-password-controller.js" />
-        <option value="$PROJECT_DIR$/components/user/user-controller.js" />
         <option value="$PROJECT_DIR$/controller/interceptor.js" />
-        <option value="$PROJECT_DIR$/Utils/Constants.js" />
-        <option value="$PROJECT_DIR$/controller/register-controller.js" />
         <option value="$PROJECT_DIR$/Utils/Utility.js" />
+        <option value="$PROJECT_DIR$/components/coin/model/coin-model.js" />
+        <option value="$PROJECT_DIR$/controller/register-controller.js" />
+        <option value="$PROJECT_DIR$/components/server/server-controller.js" />
+        <option value="$PROJECT_DIR$/components/user/user-controller.js" />
+        <option value="$PROJECT_DIR$/Utils/Constants.js" />
+        <option value="$PROJECT_DIR$/components/setting/setting-controller.js" />
+        <option value="$PROJECT_DIR$/routers/api_routers.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1917" />
-    <option name="width" value="1926" />
+    <option name="x" value="40" />
+    <option name="width" value="1883" />
     <option name="height" value="1083" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -270,79 +235,17 @@
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="agreement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="coin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="intermediaris" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="lottery" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="notification" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="setting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
@@ -492,6 +395,8 @@
       <workItem from="1552892884372" duration="1311000" />
       <workItem from="1552899805872" duration="2839000" />
       <workItem from="1552978917280" duration="11659000" />
+      <workItem from="1553006542693" duration="1216000" />
+      <workItem from="1553023559359" duration="6446000" />
     </task>
     <task id="LOCAL-00001" summary="Admin paneli eklendi ve birkaç servis yazıldı">
       <created>1548886142709</created>
@@ -658,7 +563,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176649000" />
+    <option name="totallyTimeSpent" value="184311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,16 +575,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1917" y="0" width="1926" height="1083" extended-state="6" />
+    <frame x="40" y="0" width="1883" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23299947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23247033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.96875" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.415625" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5697917" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.415625" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
@@ -776,16 +682,46 @@
           <line>63</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controller/register-controller.js</url>
+          <line>113</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="installedApplication.user.status === userEnums.userStatusEnum.UNCONFIRMED" language="JavaScript" />
+        <watch expression="user.coin.value" language="JavaScript" />
+        <watch expression="user.coin.value &lt;= 0" language="JavaScript" />
+        <watch expression="isExistNickname.userObject.name" language="JavaScript" />
+        <watch expression="user.name" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>user.name</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isExistNickname.userObject.name</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user.coin.value &lt;= 0</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user.coin.value</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>installedApplication.user.status === userEnums.userStatusEnum.UNCONFIRMED</expression-string>
         <language-id>JavaScript</language-id>
@@ -816,53 +752,9 @@
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>userId</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.headers['authorizationkey']</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.headers['udid']</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Uri uri = Uri.parse(&quot;smsto:&quot; + number);     Intent i = new Intent(Intent.ACTION_SENDTO, uri);     i.setPackage(&quot;com.whatsapp&quot;);       startActivity(Intent.createChooser(i, &quot;&quot;));</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/add-promotions.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="16" lean-forward="true" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/1550929998439.csv" />
     <entry file="file://$PROJECT_DIR$/views/lotteries.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -970,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resources/b0a56790-4770-11e9-89e5-0769260a50e6.png" />
     <entry file="file://$PROJECT_DIR$/public/resources/d6888050-4770-11e9-89e5-0769260a50e6.png">
       <provider selected="true" editor-type-id="images" />
@@ -1038,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/report/report-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1059,6 +937,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/login-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1068,50 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/forget-password-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="630">
           <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="171" column="22" lean-forward="true" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/enums.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/register-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
@@ -1124,8 +967,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Utility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="401">
+          <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/setting/model/setting-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/enums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/coin/model/coin-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="93" column="59" lean-forward="true" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="261" column="27" lean-forward="true" selection-start-line="261" selection-start-column="27" selection-end-line="261" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/api_routers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/setting/setting-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/register-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
         </state>
       </provider>
     </entry>

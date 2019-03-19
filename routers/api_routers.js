@@ -57,6 +57,11 @@ controllersStartApplication = require('../controller/start-application')
 router.get(global.APT_SECURE_START_APPLICATION, controllersStartApplication.startApplication)  // Yapıldı
 
 
+//Settings
+settingsController=require('../components/setting/setting-controller')
+router.get('/getEvents',settingsController.getEvents)
+
+
 // User Controllers
 userControllers = require('../components/user/user-controller')
 router.post(global.API_SECURE_USER_BASE_PATH, userControllers.registerUser) // Yapıldı
@@ -68,6 +73,7 @@ router.patch('/secure/users/:userId/update', userControllers.userUpdate) // Yap�
 router.get('/secure/users/:userId/settings', userControllers.getUserSettings) // Yapılmadı
 router.patch('/secure/users/:userId/settings', userControllers.updateSettings) // Yapılmadı
 router.get('/secure/users/me',userControllers.getMe);
+router.post('/secure/users/me/update',userControllers.updateMe);
 
 // Intermediaries
 intermediariesController = require('../components/intermediaris/intermediaris-controller')

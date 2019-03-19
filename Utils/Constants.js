@@ -25,6 +25,8 @@ global.WAITING_VALIDATION_CODE=452;
 global.WAITING_VALIDATION_MESSAGE="Hesabınızı doğrulamanız gerekmektedir";
 
 
+global.NO_ENOUGH_COIN_CODE=456;
+ global.NO_ENOUGH_COIN_MESSAGE="Yeterli bakiyeniz bulunmamaktadır. Lütfen Coin alınız";
 
 // Server Response alternatives
 global.OK_CODE=200;
@@ -49,3 +51,18 @@ global.MAIL_TEXT='Hi, \n If you want confirmed account you have to click to unde
 
  global.CONFIRMED_ENTRY_TITLE='Gönderiniz Kabul Edildi'
  global.CONFIRMED_ENTRY_DESCRIPTION='Tebrikler, gönderiniz onaylandı'
+
+
+ // STATIC DATA
+ global.EVENTS=[
+  {
+   eventName:"Chaos",
+   eventDays:["Sunday","Monday","Tuesday","Wednesday"],
+   eventHours:["00:00","13:00"]
+ },
+ {
+  eventName:"Bifrost",
+      eventDays:["Sunday","Tuesday"],
+  eventHours:["14:00","15:00"]
+ }
+ ]

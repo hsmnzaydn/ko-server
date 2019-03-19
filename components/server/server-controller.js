@@ -5,6 +5,7 @@ const entryEnums = require('../entry/enums');
 const uuid = require('uuid/v1');
 const Utility = require('../../Utils/Utility');
 const Constant = require('../../Utils/Constants')
+const coinSchema = require('../coin/model/coin-model')
 
 require('dotenv').config({
     path: './process.env'
@@ -32,7 +33,7 @@ async function getServers(req, res, next) {
         return serverList
 
     }).then(servers => {
-        model={isSuccess:true,statusCode:200}
+        model = {isSuccess: true, statusCode: 200}
         model.servers = servers;
         model.statusCode = 200
         res.status(200).send(model)
@@ -71,7 +72,7 @@ async function createEntry(req, res, next) {
     var imageName = uuid() + ".png";
     global.saveImage(req.body.imageBase64, imageName);
 
-     const entry = new entrySchema({
+    const entry = new entrySchema({
         header: req.body.header,
         message: req.body.message,
         creator: res.userId,
@@ -82,23 +83,36 @@ async function createEntry(req, res, next) {
     });
 
 
-
     entry.save().then(entry => {
-        userSchema.findOne({_id: res.userId}).then(user => {
-            user.entries.push(entry._id);
-            user.save();
+        userSchema.findOne({_id: res.userId}).populate({
+            path: 'coin'
+        })
+            .then(user => {
+                if (user.coin.value <= 0) {
+                    res.status(global.NO_ENOUGH_COIN_CODE).send({
+                        code: global.NO_ENOUGH_COIN_CODE,
+                        message: global.NO_ENOUGH_COIN_MESSAGE
+                    })
+                } else {
+                    user.entries.push(entry._id);
+                    coinSchema.updateMany({_id: user.coin}, {$set: {value: user.coin.value - 1}}).then(coin => {
+                    }).catch(next)
 
-            serverSchema.findOne({_id: entry.server.toString()}).then(server => {
-                server.entries.push(entry._id);
-                server.save()
 
-                res.status(200).send({
-                    code: 200,
-                    message: 'OK'
-                })
-            }).catch(next);
+                    user.save();
 
-        });
+                    serverSchema.findOne({_id: entry.server.toString()}).then(server => {
+                        server.entries.push(entry._id);
+                        server.save()
+
+                        res.status(200).send({
+                            code: 200,
+                            message: 'OK'
+                        })
+                    }).catch(next);
+                }
+
+            });
 
     }).catch(next)
 }

@@ -40,7 +40,7 @@ async function register(req, res, next) {
             var surname=req.body.surname
             var isShowPhoneNumber=req.body.isShowPhoneNumber
             var coin = new coinSchema({
-                value: 0
+
             })
             var user = new userSchema({
                 installedApplication: installedApplication._id,
@@ -88,7 +88,8 @@ async function verificationUser(req, res, next) {
     var smsCode = req.query.smsCode
 
     installedApplicationSchema.findOne({
-        udid: req.headers['udid']
+        udid: req.headers['udid'],
+        _id:req.headers['authorizationkey']
     }).
     populate({
             path: 'user'

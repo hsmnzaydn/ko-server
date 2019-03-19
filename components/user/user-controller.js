@@ -19,7 +19,8 @@ module.exports = {
     updateSettings,
     getUsers,
     sendNotification,
-    getMe
+    getMe,
+    updateMe
 }
 
 async function registerUser(req, res, next) {
@@ -247,4 +248,44 @@ async function getMe(req, res, next) {
 
         res.status(200).send(user)
     }).catch(next)
+}
+
+
+async function updateMe(req,res,next) {
+    var userId=res.userId.toString();
+
+    userSchema.findOne({_id:userId}).then(async userProfile => {
+        var oldNickname = userProfile.nickname
+        var nickname = req.body.nickname
+        if (oldNickname != nickname) {
+            await userSchema.findOne({nickname: nickname}).then( async user => {
+                if (user) {
+                    res.status(457).send({
+                        code:457,
+                        message:"Nickname ile ilgili bir kayıt bulunmakta. Lütfen farklı bir nickname kullanınız"
+                    })
+                }
+            }).catch(next)
+        }
+
+        var name=req.body.name;
+        var surname=req.body.server;
+        var isShowPhoneNumber=req.body.isShowPhoneNumber
+        var registerServerId= req.body.registerServer
+
+        userProfile.name=name;
+        userProfile.surname=surname;
+        userProfile.isShowPhoneNumber=isShowPhoneNumber;
+        userProfile.nickname=nickname;
+        userProfile.registerServer=registerServerId;
+        return userProfile;
+    }).then(user=>{
+        user.save();
+        res.status(global.OK_CODE).send({
+            code:global.OK_CODE,
+            message:global.OK_MESSAGE
+        })
+
+    }).catch(next)
+
 }
