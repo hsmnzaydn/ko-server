@@ -226,7 +226,7 @@ async function sendNotification(req, res, next) {
 
 async function getMe(req, res, next) {
     var userId = res.userId.toString()
-    userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber']).populate([{
+    userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber','name','surname']).populate([{
         path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
     }, {
         path: 'coin',select:['value']
@@ -271,7 +271,7 @@ async function updateMe(req,res,next) {
         var name=req.body.name;
         var surname=req.body.server;
         var isShowPhoneNumber=req.body.isShowPhoneNumber
-        var registerServerId= req.body.registerServer
+        var registerServerId= req.body.registerServer._id
 
         userProfile.name=name;
         userProfile.surname=surname;
