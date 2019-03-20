@@ -269,7 +269,7 @@ async function updateMe(req,res,next) {
         }
 
         var name=req.body.name;
-        var surname=req.body.server;
+        var surname=req.body.surname;
         var isShowPhoneNumber=req.body.isShowPhoneNumber
         var registerServerId= req.body.registerServer._id
 
