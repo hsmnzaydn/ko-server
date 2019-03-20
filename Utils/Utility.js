@@ -20,7 +20,7 @@ global.sendSmsToUser = function (smsCode, receiptNumber) {
 }
 
 global.createRandomCode = function () {
-    return (Math.floor(8888)+1000).toString()
+    return (Math.random()*8888+1000).toString()
 }
 
 global.sendSMSFromCheckMobiToUser = function (phoneNumber) {

@@ -54,15 +54,19 @@ global.MAIL_TEXT='Hi, \n If you want confirmed account you have to click to unde
 
 
  // STATIC DATA
- global.EVENTS=[
-  {
-   eventName:"Chaos",
-   eventDays:["Sunday","Monday","Tuesday","Wednesday"],
-   eventHours:["00:00","13:00"]
- },
+ global.EVENTS=
  {
-  eventName:"Bifrost",
-      eventDays:["Sunday","Tuesday"],
-  eventHours:["14:00","15:00"]
+  events:[
+    {
+     eventName:"Chaos",
+     eventDays:["Sunday","Monday","Tuesday","Wednesday"],
+     eventHours:["00:00","13:00"]
+   },
+   {
+    eventName:"Bifrost",
+    eventDays:["Sunday","Tuesday"],
+    eventHours:["14:00","15:00"]
+   }
+   ]
  }
- ]
+ 
