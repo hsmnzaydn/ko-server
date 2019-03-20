@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/components/entry/entry-controller.js" line="61" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="">
+    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="Get me servisine user ve surname eklendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/user/user-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/user/user-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/15b6c6b0-3e70-11e9-8c3a-87c12467501e.png" beforeDir="false" />
@@ -30,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/public/resources/b8f67690-3e70-11e9-832b-cde85680b481.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/bc6186a0-3e73-11e9-9726-d97fa13eea1e.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/resources/fab05300-4648-11e9-9f84-83d3ea29139b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/bildirimler.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/bildirimler.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,11 +44,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="222" column="33" selection-start-line="222" selection-start-column="33" selection-end-line="222" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/forget-password-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
-              <caret line="266" column="17" lean-forward="true" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/bildirimler.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="60" column="127" selection-start-line="60" selection-start-column="127" selection-end-line="60" selection-end-column="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/notification/model/notification-model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -55,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+            <state relative-caret-position="270">
+              <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -64,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -79,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -152,7 +189,6 @@
         <option value="$PROJECT_DIR$/components/agreement/agreement-controller.js" />
         <option value="$PROJECT_DIR$/views/users.ejs" />
         <option value="$PROJECT_DIR$/views/servers.ejs" />
-        <option value="$PROJECT_DIR$/views/bildirimler.ejs" />
         <option value="$PROJECT_DIR$/components/intermediaris/intermediaris-controller.js" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/components/promotion/promotion-controller.js" />
@@ -190,6 +226,7 @@
         <option value="$PROJECT_DIR$/components/entry/entry-controller.js" />
         <option value="$PROJECT_DIR$/components/server/server-controller.js" />
         <option value="$PROJECT_DIR$/components/user/user-controller.js" />
+        <option value="$PROJECT_DIR$/views/bildirimler.ejs" />
       </list>
     </option>
   </component>
@@ -221,6 +258,19 @@
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
@@ -261,6 +311,11 @@
               <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="ko-server" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -426,7 +481,7 @@
       <workItem from="1552978917280" duration="11659000" />
       <workItem from="1553006542693" duration="1216000" />
       <workItem from="1553023559359" duration="8869000" />
-      <workItem from="1553070277042" duration="5529000" />
+      <workItem from="1553070277042" duration="9029000" />
     </task>
     <task id="LOCAL-00001" summary="Admin paneli eklendi ve birkaç servis yazıldı">
       <created>1548886142709</created>
@@ -603,11 +658,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553072439080</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Get me servisine user ve surname eklendi">
+      <created>1553085559208</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1553085559208</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update profile surname bugı çözüldü">
+      <created>1553086032788</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1553086032788</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192263000" />
+    <option name="totallyTimeSpent" value="195763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,6 +689,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="0" width="1883" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23247033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -627,13 +697,13 @@
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5697917" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.415625" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.765625" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.415625" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.3294979" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294979" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32916668" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.34375" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3294979" />
@@ -707,7 +777,9 @@
     <MESSAGE value="Login için udid güncelleme eklendi" />
     <MESSAGE value="Yeni servisler eklendi" />
     <MESSAGE value="Servisler güncellendi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servisler güncellendi" />
+    <MESSAGE value="Get me servisine user ve surname eklendi" />
+    <MESSAGE value="Update profile surname bugı çözüldü" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update profile surname bugı çözüldü" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,14 +790,10 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
-          <line>61</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
-          <line>63</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/components/server/server-controller.js</url>
+          <line>90</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -734,11 +802,23 @@
         <watch expression="req.headers['authorizationkey']" language="JavaScript" />
         <watch expression="entry.entryImageUrl" language="JavaScript" />
         <watch expression="process.env.BASE_URL + entry.entryImageUrl" language="JavaScript" />
+        <watch expression="user.coin.value" language="JavaScript" />
+        <watch expression="user.coin.value &lt;= 0" language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>user.coin.value &lt;= 0</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>user.coin.value</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>process.env.BASE_URL + entry.entryImageUrl</expression-string>
         <language-id>JavaScript</language-id>
@@ -779,26 +859,9 @@
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>isExistNickname.userObject.name</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user.coin.value &lt;= 0</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/lotteries.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="84" column="70" selection-start-line="84" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -869,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/notification/model/notification-model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/resources/713ea7f0-2b15-11e9-924b-6dc65dd673aa.png" />
     <entry file="file://$PROJECT_DIR$/public/resources/9a8da3a0-3e6a-11e9-979a-11fcad7fbcfa.png" />
     <entry file="file://$PROJECT_DIR$/public/resources/01cce510-3292-11e9-bdca-0fcf9741b154.png" />
@@ -917,13 +973,6 @@
     <entry file="file://$PROJECT_DIR$/public/resources/f95aaf90-4770-11e9-873e-8b932527b927.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/lottery/lottery-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -956,13 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/forget-password-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1050,20 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/setting/setting-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1071,17 +1099,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="266" column="17" lean-forward="true" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/user/model/user_model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="76" lean-forward="true" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/notification/notification-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/entry/entry-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/notification/model/notification-model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/bildirimler.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="60" column="127" selection-start-line="60" selection-start-column="127" selection-end-line="60" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/forget-password-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/user/user-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="222" column="33" selection-start-line="222" selection-start-column="33" selection-end-line="222" selection-end-column="33" />
         </state>
       </provider>
     </entry>
