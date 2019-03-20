@@ -120,38 +120,20 @@ async function createEntry(req, res, next) {
 async function getEntries(req, res, next) {
     var serverId = req.params.serverId;
     entrySchema.find({
-        server: serverId
-    }).populate([
-        {path: 'server'},
-        {path: 'creator'}
-    ])
-        .then(entries => {
-            var entryList = [];
+        server: serverId,
+        status: entryEnums.entryStatusEnum.CONFIRMED,
+        isDisable: false
+    }, ['price', 'createdDate', 'entryImageUrl', '_id', 'header', 'message']).then(async entries => {
 
-            entries.map(async entry => {
-                var withOutReferanceEntry = JSON.parse(JSON.stringify(entry));
-                delete withOutReferanceEntry.creator.installedApplication;
-                delete withOutReferanceEntry.creator.registerServer;
-                delete withOutReferanceEntry.creator.coin
-                delete withOutReferanceEntry.creator.entries
-                delete withOutReferanceEntry.creator.password
-                delete withOutReferanceEntry.creator.registerStatus
-                delete withOutReferanceEntry.creator.smsCode
-                delete withOutReferanceEntry.server
-                delete withOutReferanceEntry.creator.notifications
+        await entries.map(entry => {
+            entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl;
 
+        });
+        return entries
 
-                withOutReferanceEntry.entryImageUrl = global.addPathToImageList(entry.entryImageUrl)
-
-                if (entry.status == entryEnums.entryStatusEnum.CONFIRMED && !entry.isDisable) {
-                    entryList.push(withOutReferanceEntry)
-                }
-            });
-            return entryList
-
-        }).then(entries => {
+    }).then(entries => {
         model = {isSuccess: true, statusCode: 200}
-        model.entries = entries.reverse();
+        model.entries = entries;
         res.status(200).send(model)
     }).catch(next)
 }

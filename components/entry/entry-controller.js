@@ -39,20 +39,16 @@ async function getEntriesApi(req, res, next) {
     entrySchema.find({
         status: entryEnums.entryStatusEnum.CONFIRMED,
         isDisable: false
-    }, ['server', 'creator', 'price', 'createdDate', 'isDisable', 'entryImageUrl', '_id', 'header', 'message']).populate([
-        {path: 'server', select: ['_id', 'name']},
-        {path: 'creator', select: ['name', 'surname', '_id', 'nickname']}
-    ])
-        .then(entries => {
-            var entriesList = [];
+    }, ['price', 'createdDate', 'entryImageUrl', '_id', 'header', 'message']).then(async entries => {
 
-            entries.map(async entry => {
-                entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
-                entriesList.push(entry)
-            });
 
-            return entriesList
-        }).then(entries => {
+        await entries.map(entry => {
+            entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl;
+
+        });
+
+        return entries
+    }).then(entries => {
         model = {isSuccess: true, statusCode: 200}
         model.entries = entries;
         model.statusCode = 200
@@ -207,13 +203,13 @@ async function updateEntry(req, res, next) {
 
 async function getEntry(req, res, next) {
     var entryId = req.params.entryId
-    entrySchema.findOne({_id: entryId},['createdDate','entryImageUrl','_id','header','message','price']).populate([{
-        path: 'creator',select:['name','surname','nickname','phoneNumber']
+    entrySchema.findOne({_id: entryId}, ['createdDate', 'entryImageUrl', '_id', 'header', 'message', 'price']).populate([{
+        path: 'creator', select: ['name', 'surname', 'nickname', 'phoneNumber']
     }, {
-        path: 'server',select:['name','_id']
+        path: 'server', select: ['name', '_id']
     }])
         .then(entry => {
-            entry.entryImageUrl=process.env.BASE_URL+entry.entryImageUrl
+            entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
             res.status(global.OK_CODE).send(entry)
 
         }).catch(next)
