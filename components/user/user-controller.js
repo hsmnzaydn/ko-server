@@ -8,6 +8,7 @@ mailUtility = require('../../Utils/mail_utility')
 coinSchema = require('../coin/model/coin-model');
 firebase = require('../../Utils/firebase')
 entryEnums = require('../../components/entry/enums')
+notificationSchema=require('../../components/notification/model/notification-model')
 module.exports = {
     registerUser,
     logout,
@@ -214,11 +215,20 @@ async function sendNotification(req, res, next) {
         res.render('send-notification')
 
     } else if (req.method == "POST") {
-        installedApplicationSchema.findOne({user: userId}).then(installedApplication => {
-
-            firebase.sendNotificationToDevice(req.body.header, req.body.message, installedApplication.pnsToken)
-            res.redirect('/admin/users')
-
+        userSchema.findOne({_id:userId}).
+            populate({
+            path:'installedApplication'
+        })
+            .then(user=>{
+                var notification=new notificationSchema({
+                    title:req.body.header,
+                    message:req.body.message
+                })
+                notification.save();
+                user.notifications.push(notification._id);
+                user.save();
+                firebase.sendNotificationToDevice(req.body.header, req.body.message, user.installedApplication.pnsToken)
+                res.redirect('/admin/users')
         }).catch(next)
     }
 
