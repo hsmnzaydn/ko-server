@@ -58,14 +58,59 @@ global.MAIL_TEXT='Hi, \n If you want confirmed account you have to click to unde
  {
   events:[
     {
-     eventName:"Chaos",
-     eventDays:["Sunday","Monday","Tuesday","Wednesday"],
-     eventHours:["00:00","13:00"]
+      eventName:"Chaos",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["00:00","12:00","19:00"]
+    },
+    {
+      eventName:"Border Defense War",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["02:00","13:00","23:00"]
+    },
+    {
+      eventName:"Bifrost",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["02:00","14:00","21:00"]
+    },
+    {
+      eventName:"Forgotten Temple 60-83",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["03:00","22:00"]
+    },
+    {
+      eventName:"Forgotten Temple 46-59",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["09:00","19:00"]
+    },
+    {
+      eventName:"Juraid Mountain",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["07:40","22:40"]
+    },
+    {
+      eventName:"Krowaz",
+      eventDays:["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      eventHours:["10:00","21:00"]
+    },
+   {
+    eventName:"Lunar War",
+    eventDays:["Monday", "Saturday"],
+    eventHours:["06:00","14:00","20:00"]
    },
    {
-    eventName:"Bifrost",
-    eventDays:["Sunday","Tuesday"],
-    eventHours:["14:00","15:00"]
+    eventName:"Dark Lunar War",
+    eventDays:["Wednesday"],
+    eventHours:["06:00","14:00","20:00"]
+   },
+   {
+    eventName:"Castle Siege War",
+    eventDays:["Sunday"],
+    eventHours:["20:30"]
+   },
+   {
+    eventName:"Under The Castle",
+    eventDays:["Friday"],
+    eventHours:["21:00"]
    }
    ]
  }
