@@ -44,11 +44,7 @@ async function register(req, res, next) {
 
             })
             var setting=new settingSchema({
-
             })
-
-            setting.servers.push(serverId);
-            setting.save();
             var user = new userSchema({
                 installedApplication: installedApplication._id,
                 name: name,
@@ -64,6 +60,10 @@ async function register(req, res, next) {
                 smsCode: global.sendSMSFromCheckMobiToUser(phoneNumber)
             })
 
+
+            setting.user=user._id
+            setting.servers.push(serverId);
+            setting.save();
             console.log("SMS code:", user.smsCode)
 
             coin.save()

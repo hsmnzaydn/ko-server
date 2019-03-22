@@ -6,6 +6,8 @@ const uuid = require('uuid/v1');
 const Utility = require('../../Utils/Utility');
 const Constant = require('../../Utils/Constants')
 const coinSchema = require('../coin/model/coin-model')
+const settingSchema=require('../setting/model/setting-model');
+const firebaseUtility=require('../../Utils/firebase');
 
 require('dotenv').config({
     path: './process.env'
@@ -83,7 +85,7 @@ async function createEntry(req, res, next) {
     });
 
 
-    userSchema.findOne({id:res.user}).populate({path:'coin'}).then(user=>{
+    userSchema.findOne({id:res.user}).populate({path:'coin'}).then(async user => {
         if (user.coin.value <= 0) {
             res.status(global.NO_ENOUGH_COIN_CODE).send({
                 code: global.NO_ENOUGH_COIN_CODE,
@@ -97,7 +99,19 @@ async function createEntry(req, res, next) {
 
             user.save();
 
-            serverSchema.findOne({_id: entry.server.toString()}).then(server => {
+            await serverSchema.findOne({_id: entry.server.toString()}).then(async server => {
+                await settingSchema.find({servers: {$in: server}}).populate({
+                    path: 'user',
+                    populate: {path: 'installedApplication', model: 'InstalledApplication'}
+                }).then(settings => {
+                    settings.map(setting => {
+                        var title = "Yeni gönderi";
+                        var message = server.name + " serverında yeni gönderiler var";
+                        firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                    })
+
+                });
+
                 server.entries.push(entry._id);
                 server.save()
 
