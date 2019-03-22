@@ -4,6 +4,7 @@ userEnums = require('../components/user/enums')
 coinSchema = require('../components/coin/model/coin-model')
 Utility=require('../Utils/Utility')
 Constant=require('../Utils/Constants')
+settingSchema=require('../components/setting/model/setting-model');
 module.exports = {
     register,
     verificationUser
@@ -42,6 +43,12 @@ async function register(req, res, next) {
             var coin = new coinSchema({
 
             })
+            var setting=new settingSchema({
+
+            })
+
+            setting.servers.push(serverId);
+            setting.save();
             var user = new userSchema({
                 installedApplication: installedApplication._id,
                 name: name,
@@ -52,6 +59,7 @@ async function register(req, res, next) {
                 registerServer:serverId,
                 surname:surname,
                 coin: coin,
+                settings:setting,
                 isShowPhoneNumber:isShowPhoneNumber,
                 smsCode: global.sendSMSFromCheckMobiToUser(phoneNumber)
             })

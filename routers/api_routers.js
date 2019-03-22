@@ -60,6 +60,9 @@ router.get(global.APT_SECURE_START_APPLICATION, controllersStartApplication.star
 //Settings
 settingsController=require('../components/setting/setting-controller')
 router.get('/getEvents',settingsController.getEvents)
+router.get('/secure/users/:userId/settings',settingsController.getSettings);
+router.post('/secure/users/:userId/settings',settingsController.addSettings);
+
 
 
 // User Controllers

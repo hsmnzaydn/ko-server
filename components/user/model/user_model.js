@@ -20,7 +20,8 @@ var user = new Schema(
         ],
         notifications:[
                 {type:mongoose.Schema.Types.ObjectId, ref:"Notification",default:null}
-        ]
+        ],
+         settings:   {type:mongoose.Schema.Types.ObjectId, ref:"Setting",default:null}
 
 
     }

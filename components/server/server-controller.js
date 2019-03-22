@@ -83,38 +83,31 @@ async function createEntry(req, res, next) {
     });
 
 
-    entry.save().then(entry => {
-        userSchema.findOne({_id: res.userId}).populate({
-            path: 'coin'
-        })
-            .then(user => {
-                if (user.coin.value <= 0) {
-                    res.status(global.NO_ENOUGH_COIN_CODE).send({
-                        code: global.NO_ENOUGH_COIN_CODE,
-                        message: global.NO_ENOUGH_COIN_MESSAGE
-                    })
-                } else {
-                    user.entries.push(entry._id);
-                    coinSchema.updateMany({_id: user.coin}, {$set: {value: user.coin.value - 1}}).then(coin => {
-                    }).catch(next)
+    userSchema.findOne({id:res.user}).populate({path:'coin'}).then(user=>{
+        if (user.coin.value <= 0) {
+            res.status(global.NO_ENOUGH_COIN_CODE).send({
+                code: global.NO_ENOUGH_COIN_CODE,
+                message: global.NO_ENOUGH_COIN_MESSAGE
+            })
+        } else {
+            entry.save();
+            user.entries.push(entry._id);
+            coinSchema.updateMany({_id: user.coin}, {$set: {value: user.coin.value - 1}}).then(coin => {
+            }).catch(next);
 
+            user.save();
 
-                    user.save();
+            serverSchema.findOne({_id: entry.server.toString()}).then(server => {
+                server.entries.push(entry._id);
+                server.save()
 
-                    serverSchema.findOne({_id: entry.server.toString()}).then(server => {
-                        server.entries.push(entry._id);
-                        server.save()
-
-                        res.status(200).send({
-                            code: 200,
-                            message: 'OK'
-                        })
-                    }).catch(next);
-                }
-
-            });
-
-    }).catch(next)
+                res.status(200).send({
+                    code: 200,
+                    message: 'OK'
+                })
+            }).catch(next);
+        }
+    });
 }
 
 async function getEntries(req, res, next) {
