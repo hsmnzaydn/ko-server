@@ -55,7 +55,7 @@ async function addSettings(req, res, next) {
     await userSchema.findOne({_id: userId}).then( async user => {
         if(user.settings == null){
             var setting=new settingSchema({
-
+                user:user._id
             });
             await setting.save();
             user.settings=setting;

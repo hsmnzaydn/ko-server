@@ -104,10 +104,14 @@ async function createEntry(req, res, next) {
                     path: 'user',
                     populate: {path: 'installedApplication', model: 'InstalledApplication'}
                 }).then(settings => {
+
                     settings.map(setting => {
-                        var title = "Yeni gönderi";
-                        var message = server.name + " serverında yeni gönderiler var";
-                        firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                        if(setting != null){
+                            var title = "Yeni gönderi";
+                            var message = server.name + " serverında yeni gönderiler var";
+                            firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                        }
+
                     })
 
                 });
