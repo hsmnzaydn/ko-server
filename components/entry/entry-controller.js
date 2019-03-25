@@ -50,7 +50,7 @@ async function getEntriesApi(req, res, next) {
         return entries
     }).then(entries => {
         model = {isSuccess: true, statusCode: 200}
-        model.entries = entries;
+        model.entries = entries.reverse();
         model.statusCode = 200
         res.status(200).send(model)
 

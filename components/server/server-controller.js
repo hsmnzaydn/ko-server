@@ -144,7 +144,7 @@ async function getEntries(req, res, next) {
 
     }).then(entries => {
         model = {isSuccess: true, statusCode: 200}
-        model.entries = entries;
+        model.entries = entries.reverse();
         res.status(200).send(model)
     }).catch(next)
 }

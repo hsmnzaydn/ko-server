@@ -66,7 +66,7 @@ async function addSettings(req, res, next) {
 
         await settingSchema.findOne({_id: settingId}).then(async setting => {
             setting.servers =[];
-            setting.servers = req.body
+            setting.servers = req.body.settings
             setting.save()
 
             res.status(200).send({
