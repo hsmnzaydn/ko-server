@@ -53,9 +53,19 @@ async function addSettings(req, res, next) {
     var userId = res.userId;
 
     await userSchema.findOne({_id: userId}).then( async user => {
+        if(user.settings == null){
+            var setting=new settingSchema({
+
+            });
+            await setting.save();
+            user.settings=setting;
+            await user.save();
+        }
+
         var settingId=user.settings._id.toString();
 
         await settingSchema.findOne({_id: settingId}).then(async setting => {
+            setting.servers =[];
             setting.servers = req.body
             setting.save()
 
