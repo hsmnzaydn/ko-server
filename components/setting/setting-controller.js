@@ -22,13 +22,14 @@ async function getSettings(req, res, next) {
 
     userSchema.findOne({_id: userId}).populate({
         path: 'settings',
-        populate: {path: 'servers', model: 'Server',select:['_id','name']}
+        populate: {path: 'servers', select:['_id','name']}
 
     }).then(user => {
         serverSchema.find().then(async servers => {
             var withOutReferanceServer = JSON.parse(JSON.stringify(servers));
 
             await withOutReferanceServer.map(async server => {
+                delete server['entries']
                 await user.settings.servers.map(async settingServer => {
                     if (settingServer._id.toString() == server._id.toString()) {
                         server.isLiked = true;

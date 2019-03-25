@@ -135,7 +135,6 @@ app.use(function (err, req, res, next) {
 });
 
 
-
 var admin = require("firebase-admin");
 
 var serviceAccount = require("./auth/firebase");
