@@ -29,7 +29,7 @@ async function sendNotificationToAll(title, body) {
 async function sendNotificationToDevice(title, body, registrationToken) {
 
     var payload = {
-        data: {
+        notification: {
             title: title,
             body: body
         }

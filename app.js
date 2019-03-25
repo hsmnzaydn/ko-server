@@ -5,6 +5,7 @@ cookieParser = require('cookie-parser');
 logger = require('morgan');
 firebaseAdmin = require('firebase-admin');
 adminSchema = require('./components/admin/model/admin-model')
+constant=require('./Utils/firebase');
 
 
 
@@ -143,6 +144,7 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://fact-79106.firebaseio.com"
 });
+
 
 
 
