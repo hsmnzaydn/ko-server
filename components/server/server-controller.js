@@ -92,12 +92,12 @@ async function createEntry(req, res, next) {
                 message: global.NO_ENOUGH_COIN_MESSAGE
             })
         } else {
-            entry.save();
-            user.entries.push(entry._id);
-            coinSchema.updateMany({_id: user.coin}, {$set: {value: user.coin.value - 1}}).then(coin => {
+            await entry.save();
+            await user.entries.push(entry._id);
+            await coinSchema.updateMany({_id: user.coin}, {$set: {value: user.coin.value - 1}}).then(coin => {
             }).catch(next);
 
-            user.save();
+            await user.save();
 
             await serverSchema.findOne({_id: entry.server.toString()}).then(async server => {
 
