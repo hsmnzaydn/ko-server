@@ -100,21 +100,6 @@ async function createEntry(req, res, next) {
             user.save();
 
             await serverSchema.findOne({_id: entry.server.toString()}).then(async server => {
-                await settingSchema.find({servers: {$in: server}}).populate({
-                    path: 'user',
-                    populate: {path: 'installedApplication', model: 'InstalledApplication'}
-                }).then(settings => {
-
-                    settings.map(setting => {
-                        if(setting.user != null){
-                            var title = "Yeni gönderi";
-                            var message = server.name + " serverında yeni gönderiler var";
-                            firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
-                        }
-
-                    })
-
-                });
 
                 server.entries.push(entry._id);
                 server.save()

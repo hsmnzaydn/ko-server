@@ -73,13 +73,15 @@ async function entryUpdate(req, res, next) {
         var message = req.body.entryMessage;
         var status = req.body.entryStatus;
 
-        entrySchema.findOne({_id: entryId}).populate({
+        entrySchema.findOne({_id: entryId}).populate([{
             path: "creator",
             populate: {
                 path: "installedApplication",
                 model: "InstalledApplication"
             }
-        })
+        },{
+            path: 'server',select:['name']
+        }])
             .then(entry => {
                 entry.header = header;
                 entry.message = message;
@@ -89,7 +91,7 @@ async function entryUpdate(req, res, next) {
             }).then(entry => {
             entry.save();
             return entry
-        }).then(entry => {
+        }).then(async entry => {
             var title;
             var message;
             if (entry.status == entryEnums.entryStatusEnum.UNCONFIRMED) {
@@ -98,6 +100,23 @@ async function entryUpdate(req, res, next) {
             } else if (entry.status == entryEnums.entryStatusEnum.CONFIRMED) {
                 title = global.CONFIRMED_ENTRY_TITLE;
                 message = global.CONFIRMED_ENTRY_DESCRIPTION;
+
+
+                await settingSchema.find({servers: {$in: entry.server}}).populate({
+                    path: 'user',
+                    populate: {path: 'installedApplication', model: 'InstalledApplication'}
+                }).then(settings => {
+
+                    settings.map(setting => {
+                        if (setting.user != null) {
+                            var title = "Yeni gönderi";
+                            var message = entry.server.name + " serverında yeni gönderiler var";
+                            firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                        }
+
+                    })
+
+                });
             }
             firebase.sendNotificationToDevice(title, message, entry.creator.installedApplication.pnsToken)
             var returnValue = {
@@ -106,7 +125,8 @@ async function entryUpdate(req, res, next) {
                 notificationMessage: message
             }
             return returnValue;
-        }).then(returnValue => {
+        }).then(async returnValue => {
+
             userSchema.findOne({_id: returnValue.entry.creator}).then(user => {
                 var notification = new notificationSchema({
                     title: returnValue.notificationTitle,
