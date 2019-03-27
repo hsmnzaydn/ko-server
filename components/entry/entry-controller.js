@@ -4,7 +4,8 @@ userSchema = require('../user/model/user_model');
 notificationSchema = require('../notification/model/notification-model');
 serverSchema = require('../server/model/server-model')
 Constant = require('../../Utils/Constants')
-firebase = require('../../Utils/firebase')
+firebaseUtility = require('../../Utils/firebase')
+
 require('dotenv').config({
     path: './process.env'
 });
