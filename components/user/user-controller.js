@@ -236,6 +236,7 @@ async function sendNotification(req, res, next) {
 
 async function getMe(req, res, next) {
     var userId = res.userId.toString()
+
     userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber','name','surname']).populate([{
         path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
     }, {
