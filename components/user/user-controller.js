@@ -238,7 +238,7 @@ async function getMe(req, res, next) {
     var userId = res.userId.toString()
 
     userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber','name','surname']).populate([{
-        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status']
+        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status'],match:{isDisable:false,status:entryEnums.entryStatusEnum.CONFIRMED}
     }, {
         path: 'coin',select:['value']
     },{
@@ -247,10 +247,8 @@ async function getMe(req, res, next) {
         .then(user => {
             var entries = [];
             user.entries.map(async entry => {
-                if (entry.status == entryEnums.entryStatusEnum.CONFIRMED && !entry.isDisable) {
                     entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
                     entries.push(entry)
-                }
             })
             user.entries = entries
 

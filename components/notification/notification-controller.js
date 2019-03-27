@@ -27,7 +27,7 @@ async function getNotifications(req, res, next) {
     }).
     then(user=>{
         model = {isSuccess: true, statusCode: 200};
-        model.notifications = user.notifications;
+        model.notifications = user.notifications.reverse();
         res.status(200).send(model)
     }).catch(next)
 
