@@ -41,7 +41,7 @@ entryController = require('../components/entry/entry-controller')
 router.get('/entries', entryController.getEntriesApi)  // Yapıldı
 router.get('/entries/:entryId/detail',entryController.getEntry)
 router.patch('/secure/entries/:entryId/delete',entryController.entryDelete)
-router.patch('/secure/entries/:entryId/update',entryController.updateEntry);
+router.post('/secure/entries/:entryId/update',entryController.updateEntry);
 
 //Reports
 reportController = require('../components/report/report-controller')

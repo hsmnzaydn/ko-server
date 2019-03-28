@@ -81,7 +81,8 @@ async function createEntry(req, res, next) {
         server: serverId,
         status: entryEnums.entryStatusEnum.UNCONFIRMED,
         price: req.body.price,
-        entryImageUrl: process.env.RESOURCES_PATH + imageName
+        entryImageUrl: process.env.RESOURCES_PATH + imageName,
+        createdDate:Date.now()
     });
 
 

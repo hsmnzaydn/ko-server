@@ -5,7 +5,7 @@ cookieParser = require('cookie-parser');
 logger = require('morgan');
 firebaseAdmin = require('firebase-admin');
 adminSchema = require('./components/admin/model/admin-model')
-constant=require('./Utils/firebase');
+constant = require('./Utils/firebase');
 
 
 
@@ -41,8 +41,13 @@ mongoose.Promise = global.Promise;
 // Body Parser
 bodyParser = require('body-parser')
 
-app.use(express.urlencoded({limit: '50mb', extended: true}));
-app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({
+  limit: '50mb',
+  extended: true
+}));
+app.use(express.json({
+  limit: '50mb'
+}));
 
 // File Upload
 path = require('path');
@@ -53,7 +58,11 @@ app.use(fileUpload())
 
 // Passport
 passport = require('passport');
-app.use(require('express-session')({secret: 'keyboard cat', resave: false, saveUninitialized: false}));
+app.use(require('express-session')({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: false
+}));
 LocalStrategy = require('passport-local').Strategy;
 
 app.use(passport.initialize());
@@ -63,24 +72,27 @@ adminSchema = require('./components/admin/model/admin-model')
 
 
 passport.use(new LocalStrategy({
-      useNewUrlParser: true
-    },
-    function (username, password, done,next) {
-      adminSchema.findOne({adminUserName:username,password:password},function (err,admin) {
-        if(admin == null){
-          admin=new adminSchema({
-            adminUserName:'admin',
-            password:'admin'
-          })
+    useNewUrlParser: true
+  },
+  function (username, password, done, next) {
+    adminSchema.findOne({
+      adminUserName: username,
+      password: password
+    }, function (err, admin) {
+      if (admin == null) {
+        admin = new adminSchema({
+          adminUserName: 'admin',
+          password: 'admin'
+        })
 
-          admin.save();
-          //return done(null, false);
-        }else{
-          return done(null, admin);
-        }
-      });
+        admin.save();
+        //return done(null, false);
+      } else {
+        return done(null, admin);
+      }
+    });
 
-    }
+  }
 ));
 passport.serializeUser(function (admin, cb) {
   cb(null, admin._id);

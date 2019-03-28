@@ -174,42 +174,14 @@ async function entryConfirme(req, res, next) {
 async function updateEntry(req, res, next) {
     var entryId = req.params.entryId
 
-    var query = req.query.area
 
     entrySchema.findOne({_id: entryId}).then(entry => {
-        if (query == "HEADER") {
-            entry.header = req.body.header
-        }
-        if (query == "MESSAGE") {
-            entry.message = req.body.message
-        }
-        if (query == "ENTRYIMAGE") {
-            var imageName = uuid() + ".png";
-            global.saveImage(req.body.imageBase64, imageName);
-            entry.entryImageUrl = process.env.RESOURCES_PATH + imageName;
-        }
-        if (query == "PRICE") {
-            entry.price = req.body.price
-        }
-        /*  if(query == "SERVER"){
-
-          serverSchema.findOne({_id:entry.server}).then(server=>{
-             var entries=[]
-              server.entries.map(entryServer=>{
-                  if(entry._id != entryServer._id){
-                      entries.push(entryServer)
-                  }
-              })
-              server.entries=entries
-              server.save()
-
-          });
-
-              /*serverSchema.update({_id:entry.server},
-                  { $pull: { 'entries':{'_id': entryId} }} );
-
-              entry.server=req.body.server
-          }*/
+        entry.header=req.body.header;
+        entry.message=req.body.message;
+        entry.price=req.body.price;
+        entry.server=req.body.server._id;
+        entry.status=entryEnums.entryStatusEnum.UNCONFIRMED;
+        entry.save();
         return entry
     }).then(entry => {
         entry.save()
