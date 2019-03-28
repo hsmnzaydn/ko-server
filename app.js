@@ -26,7 +26,7 @@ app.use("/public", express.static(path.join(__dirname, 'public')));
 
 // Process Env file
 require('dotenv').config({
-  path: './process.env'
+  path: './.env'
 });
 
 // Database Configuration

@@ -2,10 +2,19 @@ version: "2"
 services:
     node_web:
       container_name: app
-      image: floody
+      build: .
       restart: always
+      environment:
+        - "DB_URL=$DB_URL"
+        - "RESOURCES_PATH=$RESOURCES_PATH"
+        - "BASE_URL=$BASE_URL"
+        - "UPLOAD_FILE_BASE_URL=$UPLOAD_FILE_BASE_URL"
+        - "FIREBASE_DATABASE_URL=$FIREBASE_DATABASE_URL"
+        - "REGISTRATION_TOKEN=$REGISTRATION_TOKEN"
+        - "PORT=$PORT"
       ports:
         - "8080:8080"
+        - "80:8080"
       depends_on:
         - db
     db:

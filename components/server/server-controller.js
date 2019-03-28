@@ -10,7 +10,7 @@ const settingSchema=require('../setting/model/setting-model');
 const firebaseUtility=require('../../Utils/firebase');
 
 require('dotenv').config({
-    path: './process.env'
+    path: './.env'
 });
 
 module.exports = {

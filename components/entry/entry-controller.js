@@ -7,7 +7,7 @@ Constant = require('../../Utils/Constants')
 firebaseUtility = require('../../Utils/firebase')
 
 require('dotenv').config({
-    path: './process.env'
+    path: './.env'
 });
 
 module.exports = {
