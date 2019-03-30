@@ -194,8 +194,7 @@ async function updateEntry(req, res, next) {
         entry.price = req.body.price;
         entry.server = req.body.server._id;
         entry.status = entryEnums.entryStatusEnum.CONFIRMED;
-        await coinSchema.updateMany({_id: entry.creator.coin}, {$set: {value: entry.creator.coin.value - 1}}).then(coin => {
-        }).catch(next);
+
 
         return entry
     }).then(entry => {
