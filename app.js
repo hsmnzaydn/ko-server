@@ -22,6 +22,8 @@ app.use(express.urlencoded({
 }));
 app.use(cookieParser());
 app.use("/public", express.static(path.join(__dirname, 'public')));
+app.use("/privacy/", express.static(path.join(__dirname, './views/privacy')));
+
 
 
 // Process Env file
