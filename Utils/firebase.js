@@ -27,14 +27,42 @@ async function sendNotificationToAll(title, body) {
 
 
 async function sendNotificationToDevice(title, body, registrationToken) {
-
-    var payload = {
+/*
+    const payload = {
         notification: {
             title: title,
-            body: body
+            body: body,
         },
+        android: {
+            notification: {
+                sound: 'default'
+            },
+        },
+        apns: {
+            payload: {
+                aps: {
+                    sound: 'default'
+                },
+            },
+        },
+        topic: 'X'
+    };*/
+
+    const payload = {
+        'notification': {
+            'title': title,
+            'body': body,
+            'sound': 'default'
+
+        }
     };
-    admin.messaging().sendToDevice(registrationToken, payload)
+
+
+    var options = {
+        priority: "high",
+        timeToLive: 60 * 60 * 24
+    };
+    admin.messaging().sendToDevice(registrationToken, payload,options)
         .then(function (response) {
             console.log('Successfully sent message:', response);
         })
