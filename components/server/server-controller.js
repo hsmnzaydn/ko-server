@@ -86,7 +86,7 @@ async function createEntry(req, res, next) {
     });
 
 
-    userSchema.findOne({id:res.user}).populate({path:'coin'}).then(async user => {
+    userSchema.findOne({_id:res.userId}).populate({path:'coin'}).then(async user => {
         if (user.coin.value <= 0) {
             res.status(global.NO_ENOUGH_COIN_CODE).send({
                 code: global.NO_ENOUGH_COIN_CODE,
