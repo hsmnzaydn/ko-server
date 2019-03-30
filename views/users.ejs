@@ -80,7 +80,12 @@
                                         <td><%=users[i].surname%></td>
                                         <td><%=users[i].nickname%></td>
                                         <td class="center"><%=users[i].phoneNumber%></td>
+                                        <%if(users[i].registerServer != null){%>
                                         <td class="center"><%=users[i].registerServer.name%></td>
+                                        <%}else {%>
+                                        <td class="center">Kullanıcının kayıt olduğu sunucu kaldırılmış</td>
+                                        <%}%>
+
                                         <td class="center"><%=users[i].registerStatus%></td>
                                         <td class="col-lg-3">
                                             <a href="users/<%=users[i]._id%>/edit"><button type="button" class="btn btn-warning">Düzenle</button></a>
