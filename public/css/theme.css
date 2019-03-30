@@ -1,0 +1,20 @@
+.responsive {
+  width: 70%;
+  height: auto;
+}
+
+.text {
+ background: #FFF;
+		display: block;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+		margin: 0;
+		padding: 4px;
+		text-align: left;
+}
+
+.h1 {
+  color: white;
+  text-align: center;
+}

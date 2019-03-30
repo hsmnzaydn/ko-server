@@ -80,8 +80,8 @@ async function entryUpdate(req, res, next) {
                 path: "installedApplication",
                 model: "InstalledApplication"
             }
-        },{
-            path: 'server',select:['name']
+        }, {
+            path: 'server', select: ['name']
         }])
             .then(entry => {
                 entry.header = header;
@@ -109,11 +109,11 @@ async function entryUpdate(req, res, next) {
                 }).then(settings => {
 
                     settings.map(setting => {
-                        if (setting.user != null ) {
-                            if( setting.user.toString() != entry.creator._id.toString()){
-                            var title = "Yeni gönderi";
-                            var message = entry.server.name + " serverında yeni gönderiler var";
-                            firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                        if (setting.user != null) {
+                            if (setting.user.toString() != entry.creator._id.toString()) {
+                                var title = "Yeni gönderi";
+                                var message = entry.server.name + " serverında yeni gönderiler var";
+                                firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
                             }
                         }
 
@@ -177,13 +177,20 @@ async function updateEntry(req, res, next) {
     var entryId = req.params.entryId
 
 
-    entrySchema.findOne({_id: entryId}).then(entry => {
-        entry.header=req.body.header;
-        entry.message=req.body.message;
-        entry.price=req.body.price;
-        entry.server=req.body.server._id;
-        entry.status=entryEnums.entryStatusEnum.UNCONFIRMED;
-        entry.save();
+    entrySchema.findOne({_id: entryId}).populate({
+        path: 'creator',
+        populate:{
+            path: 'coin'
+        }
+    }).then(async entry => {
+        entry.header = req.body.header;
+        entry.message = req.body.message;
+        entry.price = req.body.price;
+        entry.server = req.body.server._id;
+        entry.status = entryEnums.entryStatusEnum.UNCONFIRMED;
+        await coinSchema.updateMany({_id: entry.creator.coin}, {$set: {value: entry.creator.coin.value - 1}}).then(coin => {
+        }).catch(next);
+
         return entry
     }).then(entry => {
         entry.save()

@@ -111,6 +111,11 @@ passport.deserializeUser(function (id, cb) {
 
 
 //Routers
+
+app.get('/',function (req,res,next) {
+  res.render('index')
+})
+
 constant = require('./Utils/Constants')
 routers = require('./routers/api_routers')
 adminRouters = require('./routers/admin_routers')

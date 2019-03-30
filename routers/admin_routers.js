@@ -14,6 +14,7 @@ router.post('', passport.authenticate('local', {
 }));
 
 
+
 userContoller = require('../components/user/user-controller');
 router.get('/users', redirect, userContoller.getUsers);
 router.get('/users/:userId/edit', redirect, userContoller.userUpdate);
