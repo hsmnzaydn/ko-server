@@ -5,7 +5,7 @@ notificationSchema = require('../notification/model/notification-model');
 serverSchema = require('../server/model/server-model')
 Constant = require('../../Utils/Constants')
 firebaseUtility = require('../../Utils/firebase')
-
+coinSchema = require('../coin/model/coin-model')
 require('dotenv').config({
     path: './.env'
 });
@@ -28,7 +28,7 @@ async function getEntries(req, res, next) {
     ])
         .then(entries => {
             res.render('entries', {
-                entries: entries
+                entries: entries.reverse()
             })
 
             res.status(200).send(entries)
@@ -76,10 +76,13 @@ async function entryUpdate(req, res, next) {
 
         entrySchema.findOne({_id: entryId}).populate([{
             path: "creator",
-            populate: {
+            populate: [{
                 path: "installedApplication",
                 model: "InstalledApplication"
-            }
+            },{
+                path: "coin",
+                model: "Coin"
+            }]
         }, {
             path: 'server', select: ['name']
         }])
@@ -96,8 +99,10 @@ async function entryUpdate(req, res, next) {
             var title;
             var message;
             if (entry.status == entryEnums.entryStatusEnum.UNCONFIRMED) {
-                title = global.UNCONFIRMED_ENTRY_TITLE;
-                message = global.UNCONFIRMED_ENTRY_DESCRIPTION;
+                title = "Gönderiniz onaylanmadı";
+                message = entry.header + " başlıklı ilanınız uygunsuz içerikten dolayı reddedilmiştir. Lütfen tekrar Flood girişi yapınız.";
+                await coinSchema.updateMany({_id: entry.creator.coin}, {$set: {value: entry.creator.coin.value + 1}}).then(coin => {
+                }).catch(next);
             } else if (entry.status == entryEnums.entryStatusEnum.CONFIRMED) {
                 title = global.CONFIRMED_ENTRY_TITLE;
                 message = global.CONFIRMED_ENTRY_DESCRIPTION;
@@ -106,13 +111,14 @@ async function entryUpdate(req, res, next) {
                 await settingSchema.find({servers: {$in: entry.server}}).populate({
                     path: 'user',
                     populate: {path: 'installedApplication', model: 'InstalledApplication'}
-                }).then(settings => {
+                }).then(async settings => {
 
-                    settings.map(setting => {
+                    await settings.map(setting => {
                         if (setting.user != null) {
+
                             if (setting.user.toString() != entry.creator._id.toString()) {
-                                var title = "Yeni gönderi";
-                                var message = entry.server.name + " serverında yeni gönderiler var";
+                                var title = "Yeni flood var";
+                                var message = entry.server.name+":"+entry.header+" başlığıyla bir flood var";
                                 firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
                             }
                         }
@@ -121,7 +127,7 @@ async function entryUpdate(req, res, next) {
 
                 });
             }
-            firebase.sendNotificationToDevice(title, message, entry.creator.installedApplication.pnsToken)
+            await firebase.sendNotificationToDevice(title, message, entry.creator.installedApplication.pnsToken)
             var returnValue = {
                 entry: entry,
                 notificationTitle: title,
@@ -130,7 +136,7 @@ async function entryUpdate(req, res, next) {
             return returnValue;
         }).then(async returnValue => {
 
-            userSchema.findOne({_id: returnValue.entry.creator}).then(user => {
+           await userSchema.findOne({_id: returnValue.entry.creator}).then(user => {
                 var notification = new notificationSchema({
                     title: returnValue.notificationTitle,
                     message: returnValue.notificationMessage
@@ -179,7 +185,7 @@ async function updateEntry(req, res, next) {
 
     entrySchema.findOne({_id: entryId}).populate({
         path: 'creator',
-        populate:{
+        populate: {
             path: 'coin'
         }
     }).then(async entry => {
@@ -187,7 +193,7 @@ async function updateEntry(req, res, next) {
         entry.message = req.body.message;
         entry.price = req.body.price;
         entry.server = req.body.server._id;
-        entry.status = entryEnums.entryStatusEnum.UNCONFIRMED;
+        entry.status = entryEnums.entryStatusEnum.CONFIRMED;
         await coinSchema.updateMany({_id: entry.creator.coin}, {$set: {value: entry.creator.coin.value - 1}}).then(coin => {
         }).catch(next);
 
