@@ -109,10 +109,12 @@ async function entryUpdate(req, res, next) {
                 }).then(settings => {
 
                     settings.map(setting => {
-                        if (setting.user != null) {
+                        if (setting.user != null ) {
+                            if( setting.user.toString() != entry.creator._id.toString()){
                             var title = "Yeni gönderi";
                             var message = entry.server.name + " serverında yeni gönderiler var";
                             firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                            }
                         }
 
                     })

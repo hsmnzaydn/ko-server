@@ -32,7 +32,7 @@ async function sendNotificationToDevice(title, body, registrationToken) {
         notification: {
             title: title,
             body: body
-        }
+        },
     };
     admin.messaging().sendToDevice(registrationToken, payload)
         .then(function (response) {
