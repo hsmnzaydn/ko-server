@@ -45,6 +45,8 @@ async function getEntriesApi(req, res, next) {
 
         await entries.map(entry => {
             entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl;
+            entry.entryImageUrl.replace('\"','')
+            entry.entryImageUrl.replace('"', '')
 
         });
 

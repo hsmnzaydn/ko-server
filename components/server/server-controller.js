@@ -81,7 +81,7 @@ async function createEntry(req, res, next) {
         server: serverId,
         status: entryEnums.entryStatusEnum.UNCONFIRMED,
         price: req.body.price,
-        entryImageUrl: process.env.RESOURCES_PATH + imageName,
+        entryImageUrl: "public/resources/" + imageName,
         createdDate:Date.now()
     });
 
@@ -124,6 +124,7 @@ async function getEntries(req, res, next) {
 
         await entries.map(entry => {
             entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl;
+            entry.entryImageUrl.replace('\"','')
 
         });
         return entries
