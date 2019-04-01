@@ -251,7 +251,7 @@ async function getMe(req, res, next) {
                     entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
                     entries.push(entry)
             })
-            user.entries = entries
+            user.entries = entries.reverse()
 
             return user
         }).then(user => {
