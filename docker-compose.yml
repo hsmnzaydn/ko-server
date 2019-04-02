@@ -17,6 +17,8 @@ services:
         - "80:8080"
       depends_on:
         - db
+      volumes:
+        - ./app:/src/app
     db:
       image: aashreys/mongo-auth:latest
       container_name: db
