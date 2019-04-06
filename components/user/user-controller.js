@@ -8,7 +8,7 @@ mailUtility = require('../../Utils/mail_utility')
 coinSchema = require('../coin/model/coin-model');
 firebase = require('../../Utils/firebase')
 entryEnums = require('../../components/entry/enums')
-notificationSchema=require('../../components/notification/model/notification-model')
+notificationSchema = require('../../components/notification/model/notification-model')
 module.exports = {
     registerUser,
     logout,
@@ -56,7 +56,7 @@ async function registerUser(req, res, next) {
         })
     }).catch(next)
 
-    
+
 }
 
 
@@ -125,12 +125,15 @@ async function getCoins(req, res, next) {
 
 async function getUser(req, res, next) {
     userSchema.findOne({
-        _id: req.params.userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber']).populate([{
-        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status'],match:{isDisable:false,status:entryEnums.entryStatusEnum.CONFIRMED}
+        _id: req.params.userId
+    }, ['nickname', 'phoneNumber', 'registerServer', 'isShowPhoneNumber']).populate([{
+        path: 'entries',
+        select: ['createdDate', 'entryImageUrl', '_id', 'header', 'message', 'price', 'status'],
+        match: {isDisable: false, status: entryEnums.entryStatusEnum.CONFIRMED}
     }, {
-        path: 'coin',select:['value']
-    },{
-        path: 'registerServer',select:['name']
+        path: 'coin', select: ['value']
+    }, {
+        path: 'registerServer', select: ['name']
     }])
         .then(user => {
 
@@ -216,21 +219,20 @@ async function sendNotification(req, res, next) {
         res.render('send-notification')
 
     } else if (req.method == "POST") {
-        userSchema.findOne({_id:userId}).
-            populate({
-            path:'installedApplication'
+        userSchema.findOne({_id: userId}).populate({
+            path: 'installedApplication'
         })
-            .then(user=>{
-                var notification=new notificationSchema({
-                    title:req.body.header,
-                    message:req.body.message
+            .then(user => {
+                var notification = new notificationSchema({
+                    title: req.body.header,
+                    message: req.body.message
                 })
                 notification.save();
                 user.notifications.push(notification._id);
                 user.save();
                 firebase.sendNotificationToDevice(req.body.header, req.body.message, user.installedApplication.pnsToken)
                 res.redirect('/admin/users')
-        }).catch(next)
+            }).catch(next)
     }
 
 }
@@ -238,21 +240,23 @@ async function sendNotification(req, res, next) {
 async function getMe(req, res, next) {
     var userId = res.userId.toString()
 
-    userSchema.findOne({_id: userId},['nickname','phoneNumber','registerServer','isShowPhoneNumber','name','surname']).populate([{
-        path: 'entries',select:['createdDate','entryImageUrl','_id','header','message','price','status'],match:{isDisable:false,status:entryEnums.entryStatusEnum.CONFIRMED}
+    userSchema.findOne({_id: userId}, ['nickname', 'phoneNumber', 'registerServer', 'isShowPhoneNumber', 'name', 'surname']).populate([{
+        path: 'entries',
+        select: ['createdDate', 'entryImageUrl', '_id', 'header', 'message', 'price', 'status'],
+        match: {isDisable: false, status: entryEnums.entryStatusEnum.CONFIRMED}
     }, {
-        path: 'coin',select:['value']
-    },{
-        path: 'registerServer',select:['name']
+        path: 'coin', select: ['value']
+    }, {
+        path: 'registerServer', select: ['name']
     }])
         .then(user => {
             var entries = [];
             user.entries.map(async entry => {
-                    entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
-                    entries.push(entry)
+                entry.entryImageUrl = process.env.BASE_URL + entry.entryImageUrl
+                entries.push(entry)
             })
             user.entries = entries.reverse()
-            
+
             return user
         }).then(user => {
 
@@ -261,39 +265,52 @@ async function getMe(req, res, next) {
 }
 
 
-async function updateMe(req,res,next) {
-    var userId=res.userId.toString();
+async function updateMe(req, res, next) {
+    var userId = res.userId.toString();
+    var updateType = req.query.updateType
 
-    userSchema.findOne({_id:userId}).then(async userProfile => {
+    userSchema.findOne({_id: userId}).populate({
+        path: 'coin'
+    }).then(async userProfile => {
         var oldNickname = userProfile.nickname
         var nickname = req.body.nickname
         if (oldNickname != nickname) {
-            await userSchema.findOne({nickname: nickname}).then( async user => {
+            await userSchema.findOne({nickname: nickname}).then(async user => {
                 if (user) {
                     res.status(457).send({
-                        code:457,
-                        message:"Nickname ile ilgili bir kayıt bulunmakta. Lütfen farklı bir nickname kullanınız"
+                        code: 457,
+                        message: "Nickname ile ilgili bir kayıt bulunmakta. Lütfen farklı bir nickname kullanınız"
                     })
                 }
             }).catch(next)
         }
+        if (updateType == "PROFILE") {
+            var name = req.body.name;
+            var surname = req.body.surname;
+            var isShowPhoneNumber = req.body.isShowPhoneNumber
+            var registerServerId = req.body.registerServer._id
 
-        var name=req.body.name;
-        var surname=req.body.surname;
-        var isShowPhoneNumber=req.body.isShowPhoneNumber
-        var registerServerId= req.body.registerServer._id
 
-        userProfile.name=name;
-        userProfile.surname=surname;
-        userProfile.isShowPhoneNumber=isShowPhoneNumber;
-        userProfile.nickname=nickname;
-        userProfile.registerServer=registerServerId;
-        return userProfile;
-    }).then(user=>{
-        user.save();
+            userProfile.name = name;
+            userProfile.surname = surname;
+            userProfile.isShowPhoneNumber = isShowPhoneNumber;
+            userProfile.nickname = nickname;
+            userProfile.registerServer = registerServerId;
+            return userProfile;
+        }else if(updateType == "COIN"){
+            await coinSchema.findOne({_id:userProfile.coin}).then(coin=>{
+                coin.value=coin.value+req.body.coin.value
+                coin.save()
+            })
+        }
+
+    }).then(async user => {
+        if(user != undefined){
+            user.save();
+        }
         res.status(global.OK_CODE).send({
-            code:global.OK_CODE,
-            message:global.OK_MESSAGE
+            code: global.OK_CODE,
+            message: global.OK_MESSAGE
         })
 
     }).catch(next)
