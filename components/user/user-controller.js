@@ -252,7 +252,7 @@ async function getMe(req, res, next) {
                     entries.push(entry)
             })
             user.entries = entries.reverse()
-
+            
             return user
         }).then(user => {
 
