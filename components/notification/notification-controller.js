@@ -2,6 +2,7 @@ const notificationSchema = require('./model/notification-model');
 firebase = require('../../Utils/firebase');
 Constant = require('../../Utils/Constants');
 userSchema = require('../user/model/user_model');
+userStatusEnums=require('../user/enums')
 
 module.exports = {
     getNotificationsAdmin,
@@ -21,16 +22,13 @@ async function getNotifications(req, res, next) {
     var userId = res.userId;
 
 
-    userSchema.findOne({_id: userId},['notifications']).
-    populate({
-        path:'notifications',select:['title','message']
-    }).
-    then(user=>{
+    userSchema.findOne({_id: userId}, ['notifications']).populate({
+        path: 'notifications', select: ['title', 'message']
+    }).then(user => {
         model = {isSuccess: true, statusCode: 200};
         model.notifications = user.notifications.reverse();
         res.status(200).send(model)
     }).catch(next)
-
 
 
 }
@@ -47,12 +45,17 @@ async function createNotifications(req, res, next) {
             message: message
         });
 
-        userSchema.update({ $push: { notifications: notification._id} }).then(users=>{
-            notification.save().then(notification => {
-                firebase.sendNotificationToAll(title, message)
-                res.redirect('/admin/notifications')
-            }).catch(next)
+        userSchema.find({registerStatus:userStatusEnums.userStatusEnum.CONFIRMED}).populate({
+            path: 'installedApplication'
         })
+            .then(async users => {
+
+                await users.map(async user => {
+                     await firebase.sendNotificationToDevice(title, message, user.installedApplication.pnsToken)
+                })
+                res.redirect('/admin/notifications')
+
+            }).catch(next)
 
 
     }

@@ -161,7 +161,7 @@ var serviceAccount = require("./auth/firebase");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://fact-79106.firebaseio.com"
+  databaseURL: "https://floody-d858a.firebaseio.com"
 });
 
 
