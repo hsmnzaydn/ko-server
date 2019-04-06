@@ -28,26 +28,6 @@ async function sendNotificationToAll(title, body) {
 
 
 async function sendNotificationToDevice(title, body, registrationToken) {
-/*
-    const payload = {
-        notification: {
-            title: title,
-            body: body,
-        },
-        android: {
-            notification: {
-                sound: 'default'
-            },
-        },
-        apns: {
-            payload: {
-                aps: {
-                    sound: 'default'
-                },
-            },
-        },
-        topic: 'X'
-    };*/
 
     const payload = {
         'notification': {
