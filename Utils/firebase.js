@@ -59,8 +59,10 @@ async function sendEntryNotificationToDevice(entryId, title, body, registrationT
             'notification': {
                 'title': title,
                 'body': body,
-                'sound': 'default',
-                'relatedObjectId': entryId
+                'sound': 'default'
+            },
+            'data':{
+            'relatedObjectId': entryId
             }
         };
     

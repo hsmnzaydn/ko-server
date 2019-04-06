@@ -129,7 +129,7 @@ async function entryUpdate(req, res, next) {
 
                 });
             }
-            await firebase.sendEntryNotificationToDevice(entry._id, title, message, entry.creator.installedApplication.pnsToken)
+            await firebase.sendNotificationToDevice(entry._id, title, message, entry.creator.installedApplication.pnsToken)
             var returnValue = {
                 entry: entry,
                 notificationTitle: title,
