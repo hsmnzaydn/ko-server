@@ -83,8 +83,8 @@ passport.use(new LocalStrategy({
     }, function (err, admin) {
       if (admin == null) {
         admin = new adminSchema({
-          adminUserName: 'admin',
-          password: 'admin'
+          adminUserName: 'floody7',
+          password: 'BmKs5251'
         })
 
         admin.save();

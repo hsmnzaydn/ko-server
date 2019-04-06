@@ -3,7 +3,8 @@ const admin = require('firebase-admin');
 
 module.exports = {
     sendNotificationToAll,
-    sendNotificationToDevice
+    sendNotificationToDevice,
+    sendEntryNotificationToDevice
 }
 
 async function sendNotificationToAll(title, body) {
@@ -50,3 +51,29 @@ async function sendNotificationToDevice(title, body, registrationToken) {
             console.log('Error sending message:', error);
         });
 }
+
+
+async function sendEntryNotificationToDevice(entryId, title, body, registrationToken) {
+    
+        const payload = {
+            'notification': {
+                'title': title,
+                'body': body,
+                'sound': 'default',
+                'relatedObjectId': entryId
+            }
+        };
+    
+    
+        var options = {
+            priority: "high",
+            timeToLive: 60 * 60 * 24
+        };
+        admin.messaging().sendToDevice(registrationToken, payload,options)
+            .then(function (response) {
+                console.log('Successfully sent message:', response);
+            })
+            .catch(function (error) {
+                console.log('Error sending message:', error);
+            });
+    }
