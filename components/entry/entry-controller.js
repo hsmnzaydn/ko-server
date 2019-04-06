@@ -121,7 +121,7 @@ async function entryUpdate(req, res, next) {
                             if (setting.user.toString() != entry.creator._id.toString()) {
                                 var title = "Yeni flood var";
                                 var message = entry.server.name+":"+entry.header+" başlığıyla bir flood var";
-                                firebaseUtility.sendNotificationToDevice(title, message, setting.user.installedApplication.pnsToken)
+                                firebaseUtility.sendEntryNotificationToDevice(entry._id.toString(), title, message, setting.user.installedApplication.pnsToken)
                             }
                         }
 
@@ -129,7 +129,7 @@ async function entryUpdate(req, res, next) {
 
                 });
             }
-            await firebase.sendNotificationToDevice(title, message, entry.creator.installedApplication.pnsToken)
+            await firebase.sendEntryNotificationToDevice(entry._id, title, message, entry.creator.installedApplication.pnsToken)
             var returnValue = {
                 entry: entry,
                 notificationTitle: title,
