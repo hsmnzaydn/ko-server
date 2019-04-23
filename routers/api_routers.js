@@ -92,4 +92,9 @@ router.get('/secure/lotteries',lotteryController.getLotteries);
 router.get('/secure/lotteries/:lotteryId',lotteryController.getLotteryDetail);
 router.post('/secure/lotteries/:lotteryId',lotteryController.addParticipants);
 
+// Event
+eventsController=require('../components/events/event-controller');
+router.get('/users/:userId/events', eventsController.getEvents);
+router.post('/users/:userId/events', eventsController.eventsUpdate);
+
 module.exports = router;

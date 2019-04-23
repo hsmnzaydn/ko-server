@@ -76,3 +76,8 @@ router.get('/lotteries/:lotteryId/participants',redirect,lotteriesController.get
 router.get('/lotteries/:lotteryId/edit',redirect,lotteriesController.editLotteries)
 router.post('/lotteries/:lotteryId/edit',redirect,lotteriesController.editLotteries)
 router.get('/lotteries/:lotteryId/delete',redirect,lotteriesController.deleteLotteries);
+
+// Adminde gözükecek mi bilmiyorum öylesine koydum şimdilik
+eventsController=require('../components/events/event-controller');
+router.get('/users/:userId/events',redirect, eventsController.getEvents);
+router.post('/users/:userId/events', redirect, eventsController.eventsUpdate);
