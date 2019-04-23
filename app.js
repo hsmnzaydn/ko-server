@@ -166,26 +166,25 @@ admin.initializeApp({
 });
 
 
-eventSchema.find().then(events=> {
+eventSchema.find().then(async events=> {
   if(events.length == 0){
     var eventList=global.EVENTS.events
 
-    eventList.map(async event=>{
+     eventList.map( async event=>{
        var eventModel=new eventSchema({
         eventName:event.eventName,
         eventDays:event.eventDays
       })
-      await eventModel.save()
-
-      event.eventHours.map(async hour=>{
+       event.eventHours.map(async hour=>{
           var hourModel=new hourSchema({
             eventHour:hour
           })
+           eventModel.eventHours.push(hourModel._id)  
           await hourModel.save()
-          await eventModel.eventHours.push(hourModel._id)  
-          await eventModel.save()
       })
-      
+      await eventModel.save()
+
+
     })
     
   }
