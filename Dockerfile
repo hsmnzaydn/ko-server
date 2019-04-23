@@ -9,6 +9,6 @@ ENV TZ 'Europe/Istanbul'
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata && \
     apt-get clean
-COPY . .
+COPY . /opt
 EXPOSE 8080
 CMD [ "npm", "start" ]

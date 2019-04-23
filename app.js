@@ -6,7 +6,8 @@ logger = require('morgan');
 firebaseAdmin = require('firebase-admin');
 adminSchema = require('./components/admin/model/admin-model')
 constant = require('./Utils/firebase');
-
+eventSchema=require('./components/events/model/event-model')
+hourSchema=require('./components/hour/hour-model')
 
 
 var app = express();
@@ -163,6 +164,32 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://floody-d858a.firebaseio.com"
 });
+
+
+eventSchema.find().then(events=> {
+  if(events.length == 0){
+    var eventList=global.EVENTS.events
+
+    eventList.map(async event=>{
+       var eventModel=new eventSchema({
+        eventName:event.eventName,
+        eventDays:event.eventDays
+      })
+      await eventModel.save()
+
+      event.eventHours.map(async hour=>{
+          var hourModel=new hourSchema({
+            eventHour:hour
+          })
+          await hourModel.save()
+          await eventModel.eventHours.push(hourModel._id)  
+          await eventModel.save()
+      })
+      
+    })
+    
+  }
+})
 
 
 
