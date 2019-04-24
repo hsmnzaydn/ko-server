@@ -284,7 +284,12 @@ async function updateMe(req, res, next) {
                 }
             }).catch(next)
         }
-        if (updateType == "PROFILE") {
+        if(updateType == "COIN"){
+            await coinSchema.findOne({_id:userProfile.coin}).then(coin=>{
+                coin.value=coin.value+req.body.coin.value
+                coin.save()
+            })
+        }else {
             var name = req.body.name;
             var surname = req.body.surname;
             var isShowPhoneNumber = req.body.isShowPhoneNumber
@@ -297,11 +302,6 @@ async function updateMe(req, res, next) {
             userProfile.nickname = nickname;
             userProfile.registerServer = registerServerId;
             return userProfile;
-        }else if(updateType == "COIN"){
-            await coinSchema.findOne({_id:userProfile.coin}).then(coin=>{
-                coin.value=coin.value+req.body.coin.value
-                coin.save()
-            })
         }
 
     }).then(async user => {
