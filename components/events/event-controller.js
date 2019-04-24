@@ -47,7 +47,7 @@ async function eventsUpdate(req, res, next) {
     userSchema.findOne({
         _id: userId
     }).then(user => {
-        user.selectedHours = req.body
+        user.selectedHours = req.body.hourList
         user.save();
 
         res.status(200).send({
