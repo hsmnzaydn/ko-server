@@ -24,10 +24,9 @@ global.createRandomCode = function () {
     return Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000
 }
 
-global.sendSMSFromCheckMobiToUser = function (phoneNumber) {
+global.sendSMSFromCheckMobiToUser = function (code,phoneNumber) {
 
-    // TODO - Checkmobi SMS gönder
-    var code = global.createRandomCode()
+    
 
     var request = require('request');
     request(

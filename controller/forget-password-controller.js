@@ -17,7 +17,7 @@ async function forgetPasswordStepOne(req, res, next) {
         user.save()
         return user
     }).then(user => {
-        global.sendSMSFromCheckMobiToUser(user.phoneNumber)
+        global.sendSMSFromCheckMobiToUser(user.smsCode,user.phoneNumber)
         res.status(200).send({
             code: global.OK_CODE,
             message: global.OK_MESSAGE
