@@ -59,57 +59,57 @@ global.EVENTS =
             {
                 eventName: "Chaos",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["00:00", "12:00", "19:00"]
+                eventHours: ["23:45", "11:45", "18:45"]
             },
             {
                 eventName: "Border Defense War",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["02:00", "13:00", "23:00"]
+                eventHours: ["01:45", "12:45", "22:45"]
             },
             {
                 eventName: "Bifrost",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["02:00", "14:00", "21:00"]
+                eventHours: ["01:45", "13:45", "20:45"]
             },
             {
                 eventName: "Forgotten Temple 60-83",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["03:00", "22:00"]
+                eventHours: ["02:45", "21:45"]
             },
             {
                 eventName: "Forgotten Temple 46-59",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["09:00", "19:00"]
+                eventHours: ["08:45", "18:45"]
             },
             {
                 eventName: "Juraid Mountain",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["07:40", "22:40"]
+                eventHours: ["06:25", "22:25"]
             },
             {
                 eventName: "Krowaz",
                 eventDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                eventHours: ["10:00", "21:00"]
+                eventHours: ["9:45", "20:45"]
             },
             {
                 eventName: "Lunar War",
                 eventDays: ["Monday", "Saturday"],
-                eventHours: ["06:00", "14:00", "20:00"]
+                eventHours: ["05:45", "13:45", "19:45"]
             },
             {
                 eventName: "Dark Lunar War",
                 eventDays: ["Wednesday"],
-                eventHours: ["06:00", "14:00", "20:00"]
+                eventHours: ["05:45", "13:45", "19:45"]
             },
             {
                 eventName: "Castle Siege War",
                 eventDays: ["Sunday"],
-                eventHours: ["20:30"]
+                eventHours: ["20:15"]
             },
             {
                 eventName: "Under The Castle",
                 eventDays: ["Friday"],
-                eventHours: ["21:00"]
+                eventHours: ["20:45"]
             }
         ]
     }
