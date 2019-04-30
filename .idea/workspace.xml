@@ -4,12 +4,14 @@
     <bookmark url="file://$PROJECT_DIR$/components/entry/entry-controller.js" line="64" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="Get me servisine user ve surname eklendi">
+    <list default="true" id="056bf267-c9e7-4327-a13a-5ab3335c4eba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Utility.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/collection-0-6206325279585186855.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/collection-0-6206325279585186855.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db/index-1-6206325279585186855.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/index-1-6206325279585186855.wt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,16 +32,43 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="204" column="30" lean-forward="true" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+            <state relative-caret-position="284">
+              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -161,7 +190,6 @@
         <option value="$PROJECT_DIR$/components/setting/model/setting-model.js" />
         <option value="$PROJECT_DIR$/components/setting/setting-controller.js" />
         <option value="$PROJECT_DIR$/views/entry-edit.ejs" />
-        <option value="$PROJECT_DIR$/Utils/Constants.js" />
         <option value="$PROJECT_DIR$/controller/start-application.js" />
         <option value="$PROJECT_DIR$/process.env" />
         <option value="$PROJECT_DIR$/views/users.ejs" />
@@ -172,7 +200,6 @@
         <option value="$PROJECT_DIR$/views/navigation.html" />
         <option value="$PROJECT_DIR$/views/privacy/agreement.html" />
         <option value="$PROJECT_DIR$/components/server/server-controller.js" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
@@ -187,6 +214,8 @@
         <option value="$PROJECT_DIR$/controller/forget-password-controller.js" />
         <option value="$PROJECT_DIR$/Utils/Utility.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/Utils/Constants.js" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -232,33 +261,6 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="entry" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="routers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ko-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ko-server" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -479,14 +481,7 @@
       <workItem from="1556132536810" duration="1003000" />
       <workItem from="1556133751578" duration="600000" />
       <workItem from="1556484102874" duration="1617000" />
-      <workItem from="1556628849756" duration="4153000" />
-    </task>
-    <task id="LOCAL-00012" summary="Docker fileler eklendi">
-      <created>1550411324612</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1550411324613</updated>
+      <workItem from="1556628849756" duration="4944000" />
     </task>
     <task id="LOCAL-00013" summary="Çekiliş&#10;    - Admin Paneli&#10;      - Çekiliş oluşturma +&#10;      - Çekiliş Düzenleme +&#10;      - Çekiliş Silme +&#10;      - Çekilişe katılanları indirme +&#10;    - API&#10;      - Çekiliş listesini çekme + &#10;      - Çekilişe katılma    +&#10;&#10;Kullanıcı &#10;    - API&#10;        - Get User servisinin endpointinin sonuna &quot;/detail&quot; eklendi. Postmande &quot;Get User&quot; servisine eklendi değişiklik&#10;        - Get Me servisinin endpointi &quot;secure/me&quot; den &quot;secure/users/me&quot; olarak değiştirildi&#10;        - Get Me servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;        - Get User servisinde entries kısmında bulunan entry imagesine basepath eklendi&#10;Gönderi&#10;    - API&#10;        - Gönderi silme servisi eklendi">
       <created>1550932914044</created>
@@ -824,11 +819,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556484202388</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Event için otomatik push gönderme eklendi">
+      <created>1556633147810</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1556633147812</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318215000" />
+    <option name="totallyTimeSpent" value="319006000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,7 +843,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1917" y="0" width="1926" height="1083" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.21402214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -850,13 +851,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40520832" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41458333" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41458333" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23229167" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47083333" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3294979" />
       <window_info active="true" anchor="bottom" id="REST Client" order="12" visible="true" weight="0.32916668" />
@@ -912,8 +913,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/views/octopus" />
     </ignored-roots>
-    <MESSAGE value="entry detail sayfasına entry image eklendi" />
-    <MESSAGE value="Artık entry confirmed olunca push gidiyor" />
     <MESSAGE value="Firebaseutility sorunu çözüldü" />
     <MESSAGE value="Get me servisi güncellendi" />
     <MESSAGE value="Entry update güncellendi" />
@@ -937,7 +936,9 @@
     <MESSAGE value="Entry id gönderildi" />
     <MESSAGE value="entry servisi düzeltildi" />
     <MESSAGE value="Phone number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phone number" />
+    <MESSAGE value="Event için otomatik push gönderme eklendi" />
+    <MESSAGE value="Dockerfile update edildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile update edildi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -971,24 +972,6 @@
           <url>file://$PROJECT_DIR$/controller/forget-password-controller.js</url>
           <line>15</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>202</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>203</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>199</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1119,13 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="61" column="32" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/start-application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1183,24 +1159,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/server/server-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
           <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1368,14 +1330,35 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="204" column="30" lean-forward="true" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+        <state relative-caret-position="413">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
         </state>
       </provider>
     </entry>
