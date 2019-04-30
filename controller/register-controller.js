@@ -57,7 +57,7 @@ async function register(req, res, next) {
                 coin: coin,
                 settings:setting,
                 isShowPhoneNumber:isShowPhoneNumber,
-                smsCode: global.sendSMSFromCheckMobiToUser(phoneNumber)
+                smsCode: global.sendSMSFromCheckMobiToUser(global.createRandomCode(),phoneNumber)
             })
 
 

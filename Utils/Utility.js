@@ -24,10 +24,9 @@ global.createRandomCode = function () {
     return Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000
 }
 
-global.sendSMSFromCheckMobiToUser = function (phoneNumber) {
+global.sendSMSFromCheckMobiToUser = function (code,phoneNumber) {
 
-    // TODO - Checkmobi SMS gönder
-    var code = global.createRandomCode()
+    
 
     var request = require('request');
     request(
@@ -70,3 +69,22 @@ global.addPathToImageList = function (photoUrl) {
     photoUrl = process.env.BASE_URL + photoUrl;
     return photoUrl;
 };
+
+global.findDayOfWeek = function (eventDay) {
+    switch (eventDay) {
+        case "Monday":
+            return 1
+        case "Tuesday":
+            return 2
+        case "Wednesday":
+            return 3
+        case "Thursday":
+            return 4
+        case "Friday":
+            return 5
+        case "Saturday":
+            return 6
+        case "Sunday":
+            return 0
+    }
+}
