@@ -69,3 +69,22 @@ global.addPathToImageList = function (photoUrl) {
     photoUrl = process.env.BASE_URL + photoUrl;
     return photoUrl;
 };
+
+global.findDayOfWeek = function (eventDay) {
+    switch (eventDay) {
+        case "Monday":
+            return 1
+        case "Tuesday":
+            return 2
+        case "Wednesday":
+            return 3
+        case "Thursday":
+            return 4
+        case "Friday":
+            return 5
+        case "Saturday":
+            return 6
+        case "Sunday":
+            return 0
+    }
+}
