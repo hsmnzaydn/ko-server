@@ -7,7 +7,8 @@ Constant=require('../Utils/Constants')
 settingSchema=require('../components/setting/model/setting-model');
 module.exports = {
     register,
-    verificationUser
+    verificationUser,
+    smsSend
 }
 
 
@@ -129,4 +130,24 @@ async function verificationUser(req, res, next) {
                 })
             })
         }).catch(next)
+}
+
+
+async function smsSend(req,res,next) {
+    var udid=req.headers['udid']
+    var authorizationKey=req.headers['authorizationkey']
+
+    installedApplicationSchema.findOne({
+        udid: req.headers['udid'],
+        _id: req.headers['authorizationkey']
+    }).populate({
+        path: 'user'
+    }).then(installedApplication => {
+        global.sendSMSFromCheckMobiToUser(installedApplication.user.smsCode,installedApplication.user.phoneNumber)
+        res.status(200).send({
+            code:200,
+            message:'OK'
+        })
+    }).catch(next)
+
 }

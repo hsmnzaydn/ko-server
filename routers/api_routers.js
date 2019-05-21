@@ -23,6 +23,7 @@ router.post('/login', loginController.login) // Yapıldı
 registerController = require('../controller/register-controller')
 router.post('/register', registerController.register) // Yapıldı
 router.get('/register', registerController.verificationUser) //Yapıldı
+router.get('/smsSend',registerController.smsSend)
 
 // Forget Password
 forgetPasswordController = require('../controller/forget-password-controller')
