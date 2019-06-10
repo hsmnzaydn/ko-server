@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var coin = new Schema(
     {
-        value:{type:Number,default:40}
+        value:{type:Number,default:7}
     }
 );
 
