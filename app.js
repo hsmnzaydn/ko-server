@@ -11,6 +11,7 @@ hourSchema = require('./components/hour/hour-model')
 schedule = require('node-schedule');
 userSchema = require('./components/user/model/user_model')
 firebaseUtility = require('./Utils/firebase')
+adminSettingSchema= require('./components/setting/model/server-setting-model')
 
 
 var app = express();
@@ -212,6 +213,14 @@ eventSchema.find().populate({
         })
     });
 
+    adminSettingSchema.find().then(settings=>{
+        if(settings.length == 0){
+            var setting=new adminSettingSchema({
+                isOpenAutoConfirm:false
+            })
+            setting.save()
+        }
+    })
 
 app.listen(process.env.PORT)
 module.exports = app;

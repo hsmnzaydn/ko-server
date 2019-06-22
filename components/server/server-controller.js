@@ -8,6 +8,7 @@ const Constant = require('../../Utils/Constants')
 const coinSchema = require('../coin/model/coin-model')
 const settingSchema=require('../setting/model/setting-model');
 const firebaseUtility=require('../../Utils/firebase');
+const adminServerShema=require('../setting/model/server-setting-model')
 
 require('dotenv').config({
     path: './.env'
@@ -85,6 +86,11 @@ async function createEntry(req, res, next) {
         createdDate:Date.now()
     });
 
+    await adminServerShema.find().then(setting=>{
+        if(setting[0].isOpenAutoConfirm){
+            entry.status=entryEnums.entryStatusEnum.CONFIRMED
+        }
+    })
 
     userSchema.findOne({_id:res.userId}).populate({path:'coin'}).then(async user => {
         if (user.coin.value <= 0) {

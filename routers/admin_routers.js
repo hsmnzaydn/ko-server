@@ -81,3 +81,7 @@ router.get('/lotteries/:lotteryId/delete',redirect,lotteriesController.deleteLot
 eventsController=require('../components/events/event-controller');
 router.get('/users/:userId/events',redirect, eventsController.getEvents);
 router.post('/users/:userId/events', redirect, eventsController.eventsUpdate);
+
+settingController=require('../components/setting/setting-controller')
+router.get('/settings',redirect,settingController.getSettingsAdmin)
+router.post('/settings',redirect,settingController.getSettingsAdmin)

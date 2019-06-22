@@ -2,11 +2,13 @@ const Constant = require('../../Utils/Constants');
 userSchema = require('../../components/user/model/user_model');
 serverSchema = require('../../components/server/model/server-model')
 settingSchema=require('../../components/setting/model/setting-model');
+serverSettingSchema=require('./model/server-setting-model')
 
 module.exports = {
     getEvents,
     getSettings,
-    addSettings
+    addSettings,
+    getSettingsAdmin
 }
 
 
@@ -76,5 +78,32 @@ async function addSettings(req, res, next) {
         })
 
     }).catch(next)
+
+}
+
+async function getSettingsAdmin(req,res,next) {
+    if(req.method=="GET"){
+        serverSettingSchema.find().then(settings=>{
+            res.render('settings',{
+                setting:settings
+            })
+
+        }).catch(next)
+    }else{
+        var isConfirm=req.body.confirmStatus
+        serverSettingSchema.find().then(setting=>{
+            if(isConfirm =="OPEN"){
+                  setting[0].isOpenAutoConfirm=true
+                  
+            }else{
+                setting[0].isOpenAutoConfirm=false
+
+            }
+
+            setting[0].save()
+                  res.redirect('/admin/settings')  
+        }).catch(next)
+        
+    }
 
 }
