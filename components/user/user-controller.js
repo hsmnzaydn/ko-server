@@ -326,7 +326,7 @@ async function getUserMessages(req,res,next) {
 
     userSchema.findOne({_id:userId})
     .populate({
-        path: 'conversations',
+        path: 'conversations', select:['_id','user','entry'],
         populate: {path: 'user', select:['_id','nickname']}
     }).then(async user=>{
         if(user.conversations == null){

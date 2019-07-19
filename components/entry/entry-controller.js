@@ -259,11 +259,21 @@ async function getMessages(req,res,next) {
                         break;
                     }
             })*/
-            res.status(global.OK_CODE).send({
-                code:global.OK_CODE,
-                messages:user.conversations
-            })
-        
+
+            if(user.conversations.length >0 ){
+                res.status(global.OK_CODE).send({
+                    code:global.OK_CODE,
+                    messages:user.conversations[0].messages
+                })
+            
+            }else{
+                res.status(global.OK_CODE).send({
+                    code:global.OK_CODE,
+                    messages:[]
+                })
+            
+            }
+           
             
         }).catch(next)
 
@@ -283,19 +293,21 @@ async function sendMessage(req,res,next) {
     }).
     then(async entry=>{
         await userSchema.findOne({_id:entry.creator}).
-        populate({
+        populate([{
             path: 'conversations',
             match: {user:senderUserId},
             populate:{
                 path :'messages',
                 model: 'Message'
             }
-        })
+        },{
+            path: 'installedApplication'
+        }])
         .then(async user=>{
             if(user.conversations.length == 0){
-                // TODO: EĞER KULLANICI DAHA ÖNCE BU KULLANICI İLE KONUŞMAMIŞ İSE MODEL OLUŞTUR VE KAYDET
                 var conversationObject = new conversationSchema({
-                    user:senderUserId
+                    user:senderUserId,
+                    entry: entry._id
                 })
 
                 var messageModel=new messageSchema({
@@ -318,16 +330,25 @@ async function sendMessage(req,res,next) {
                         message:message
                     })
 
-                    conversation.push(messageModel)
+                    conversation.messages.push(messageModel)
                     await messageModel.save()
                     await conversation.save()
 
                    }).catch(next)
             }
-            res.status(global.OK_CODE).send({
-                code:global.OK_CODE,
-                message:global.OK_MESSAGE
-            })
+            var sendMessageModel = {
+                senderUser: user._id,
+                message: message
+            }
+
+           await firebaseUtility.sendMessageNotificationToDevice(sendMessageModel, "Yeni bir mesajınız var", user.name+" kişisinden mesaj var", user.installedApplication.pnsToken)
+
+           res.status(global.OK_CODE).send({
+            code:global.OK_CODE,
+            message:global.OK_MESSAGE
+        })
+
+            
           
 
 

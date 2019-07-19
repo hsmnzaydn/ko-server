@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
 var conversation = new Schema(
     {
         user:{type:mongoose.Schema.Types.ObjectId, ref:"User",default:null},
+        entry:{type:mongoose.Schema.Types.ObjectId, ref:"Entry",default:null},
         messages:[
             {type:mongoose.Schema.Types.ObjectId, ref:"Message",default:null}
         ]
