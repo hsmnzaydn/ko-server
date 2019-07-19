@@ -9,6 +9,8 @@ coinSchema = require('../coin/model/coin-model');
 firebase = require('../../Utils/firebase')
 entryEnums = require('../../components/entry/enums')
 notificationSchema = require('../../components/notification/model/notification-model')
+conversationSchema=require('../conversation/model/conversation_model')
+
 module.exports = {
     registerUser,
     logout,
@@ -21,7 +23,8 @@ module.exports = {
     getUsers,
     sendNotification,
     getMe,
-    updateMe
+    updateMe,
+    getUserMessages
 }
 
 async function registerUser(req, res, next) {
@@ -315,4 +318,30 @@ async function updateMe(req, res, next) {
 
     }).catch(next)
 
+}
+
+
+async function getUserMessages(req,res,next) {
+    var userId = res.userId.toString()
+
+    userSchema.findOne({_id:userId})
+    .populate({
+        path: 'conversations',
+        populate: {path: 'user', select:['_id','nickname']}
+    }).then(async user=>{
+        if(user.conversations == null){
+            var conversationModel=new conversationSchema({
+
+            })
+            await user.conversations == []
+            await user.conversations.push(conversationModel)
+            await user.save()
+        }
+
+        res.status(global.OK_CODE).send({
+            code:global.OK_CODE,
+            conversations:user.conversations
+        })
+
+    }).catch(next)
 }

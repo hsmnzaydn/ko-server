@@ -6,6 +6,8 @@ serverSchema = require('../server/model/server-model')
 Constant = require('../../Utils/Constants')
 firebaseUtility = require('../../Utils/firebase')
 coinSchema = require('../coin/model/coin-model')
+const conversationSchema=require('../conversation/model/conversation_model')
+messageSchema=require('../message/model/message_model')
 require('dotenv').config({
     path: './.env'
 });
@@ -17,7 +19,9 @@ module.exports = {
     entryDelete,
     entryConfirme,
     updateEntry,
-    getEntry
+    getEntry,
+    getMessages,
+    sendMessage
 }
 
 
@@ -224,5 +228,113 @@ async function getEntry(req, res, next) {
             res.status(global.OK_CODE).send(entry)
 
         }).catch(next)
+
+}
+
+async function getMessages(req,res,next) {
+    var entryId=req.params.entryId
+    var senderUserId=res.userId
+
+    entrySchema.findOne({_id:entryId}).
+    populate({
+        path:'creator'
+    }).
+    then(async entry=>{
+        await userSchema.findOne({_id:entry.creator}).
+        populate({
+            path: 'conversations',
+            match: {user:senderUserId},
+            populate:{
+                path :'messages',
+                model: 'Message'
+            }
+        })
+        .then(async user=>{
+           /* await user.conversations.map(async conversation=>{
+                    if(conversation.user._id == senderUserId){
+                        res.send(global.OK_CODE).send({
+                            code:global.OK_CODE,
+                            messages:conversation.messages
+                        })
+                        break;
+                    }
+            })*/
+            res.status(global.OK_CODE).send({
+                code:global.OK_CODE,
+                messages:user.conversations
+            })
+        
+            
+        }).catch(next)
+
+    }).catch(next)
+    
+
+}
+
+async function sendMessage(req,res,next) {
+    var entryId=req.params.entryId
+    var senderUserId=res.userId.toString()
+    var message=req.body.message
+
+    entrySchema.findOne({_id:entryId}).
+    populate({
+        path:'creator'
+    }).
+    then(async entry=>{
+        await userSchema.findOne({_id:entry.creator}).
+        populate({
+            path: 'conversations',
+            match: {user:senderUserId},
+            populate:{
+                path :'messages',
+                model: 'Message'
+            }
+        })
+        .then(async user=>{
+            if(user.conversations.length == 0){
+                // TODO: EĞER KULLANICI DAHA ÖNCE BU KULLANICI İLE KONUŞMAMIŞ İSE MODEL OLUŞTUR VE KAYDET
+                var conversationObject = new conversationSchema({
+                    user:senderUserId
+                })
+
+                var messageModel=new messageSchema({
+                    user:senderUserId,
+                    message:message
+                })
+
+                conversationObject.messages.push(messageModel)
+                await conversationObject.save()
+                await messageModel.save()
+                await user.conversations.push(conversationObject)
+                await user.save()
+              
+
+            }else{
+                await conversationSchema.findOne({_id:user.conversations[0]._id}).then(async conversation=>{
+                
+                    var messageModel=new messageSchema({
+                        user:senderUserId,
+                        message:message
+                    })
+
+                    conversation.push(messageModel)
+                    await messageModel.save()
+                    await conversation.save()
+
+                   }).catch(next)
+            }
+            res.status(global.OK_CODE).send({
+                code:global.OK_CODE,
+                message:global.OK_MESSAGE
+            })
+          
+
+
+            
+        }).catch(next)
+
+    }).catch(next)
+    
 
 }

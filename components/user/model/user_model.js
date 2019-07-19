@@ -24,6 +24,9 @@ var user = new Schema(
          settings:   {type:mongoose.Schema.Types.ObjectId, ref:"Setting",default:null},
          selectedHours:[
             {type:mongoose.Schema.Types.ObjectId, ref:"Hour",default:null}
+         ],
+         conversations:[
+            {type:mongoose.Schema.Types.ObjectId, ref:"Conversation",default:[]}
          ]
 
 

@@ -43,6 +43,8 @@ router.get('/entries', entryController.getEntriesApi)  // Yapıldı
 router.get('/entries/:entryId/detail',entryController.getEntry)
 router.patch('/secure/entries/:entryId/delete',entryController.entryDelete)
 router.post('/secure/entries/:entryId/update',entryController.updateEntry);
+router.get('/secure/entries/:entryId/messages',entryController.getMessages)
+router.post('/secure/entries/:entryId/messages',entryController.sendMessage)
 
 //Reports
 reportController = require('../components/report/report-controller')
@@ -78,6 +80,7 @@ router.get('/secure/users/:userId/settings', userControllers.getUserSettings) //
 router.patch('/secure/users/:userId/settings', userControllers.updateSettings) // Yapılmadı
 router.get('/secure/users/me',userControllers.getMe);
 router.post('/secure/users/me/update',userControllers.updateMe);
+router.get('/secure/users/mymessages',userControllers.getUserMessages)
 
 // Intermediaries
 intermediariesController = require('../components/intermediaris/intermediaris-controller')
@@ -97,5 +100,9 @@ router.post('/secure/lotteries/:lotteryId',lotteryController.addParticipants);
 eventsController=require('../components/events/event-controller');
 router.get('/secure/users/:userId/events', eventsController.getEvents);
 router.post('/secure/users/:userId/events', eventsController.eventsUpdate);
+
+// Conversation
+conversationController=require('../components/conversation/conversation_controller')
+router.post('/secure/conversations',conversationController.createConversation)
 
 module.exports = router;
