@@ -63,6 +63,7 @@ async function sendEntryNotificationToDevice(entryId, title, body, registrationT
                 'sound': 'default'
             },
             'data':{
+                'notificationType':'ENTRY',
             'relatedObjectId': entryId
             }
         };
@@ -90,6 +91,7 @@ async function sendEntryNotificationToDevice(entryId, title, body, registrationT
                 'sound': 'default'
             },
             'data':{
+                'notificationType':'MESSAGE',
             'message': JSON.stringify(message)
             }
         };
