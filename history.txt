@@ -1,0 +1,367 @@
+    1  ls
+    2  cd ..
+    3  ls
+    4  cd home
+    5  sudo apt update
+    6  sudo apt install git
+    7  git clone https://github.com/hsmnzaydn/ko-server
+    8  ls
+    9  cd debian/
+   10  ls
+   11  cd ..
+   12  cd ko-server
+   13  ls
+   14  sudo apt-get update
+   15  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg2     software-properties-common
+   16  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+   17  sudo apt-get update
+   18  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   19  apt-key fingerprint 0EBFCD88
+   20  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+   21     $(lsb_release -cs) \
+   22     stable"
+   23  docker
+   24  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   25  sudo apt install docker.io
+   26  sudo apt-get update
+   27  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   28  apt-cache madison docker-ce
+   29  sudo docker run hello-world
+   30  docker-compose up
+   31  sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+   32  sudo chmod +x /usr/local/bin/docker-compose
+   33  docker-compose --version
+   34  docker-compose up
+   35  docker-compose down
+   36  ls
+   37  nano docker-compose.yml
+   38  nano .env
+   39  docker-compose up
+   40  mongod
+   41  mongo
+   42  ps aux | grep nano
+   43  ps aux | grep node
+   44  docker-compose down
+   45  ps aux | grep node
+   46  ps aux | grep mongo
+   47  sudo apt-get install node
+   48  sudo apt-get install mongodb
+   49  sudo apt install -y mongodb
+   50  sudo systemctl status mongodb
+   51  mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+   52  sudo systemctl status mongodb
+   53  sudo systemctl enable mongodb
+   54  sudo ufw allow from 104.248.41.136/32 to any port 27017
+   55  sudo ufw allow from 104.248.41.136/32 to any port 27017
+   56  sudo apt-get install ufw
+   57  sudo ufw allow from 104.248.41.136/32 to any port 27017
+   58  sudo ufw status
+   59  sudo systemctl enable mongodb
+   60  sudo systemctl enable mongodb
+   61  sudo ufw enable
+   62  sudo systemctl enable mongodb
+   63  sudo ufw status
+   64  sudo nano /etc/mongodb.conf
+   65  sudo systemctl restart mongodb
+   66  docker-compose up
+   67  docker-compose up
+   68  mongod
+   69  mongodb
+   70  mongo
+   71  nano .env
+   72  nano .env
+   73  mongo
+   74  sudo systemctl restart mongodb
+   75  mongodb
+   76  mongo
+   77  docker-compose down
+   78  docker-compose up
+   79  nano /etc/mongodb.conf
+   80  docker-compose up
+   81  docker-compose down
+   82  docker-compose up
+   83  mongod --storageEngine mmapv1
+   84  docker-compse down
+   85  docker-comopse down
+   86  docker-compose down
+   87  mongod --storageEngine mmapv1
+   88  ps aux | grep mongo
+   89  kill -9 12224
+   90  kill -9 12271
+   91  mongod --storageEngine mmapv1
+   92  mkdir data
+   93  cd data
+   94  ls
+   95  ls
+   96  cd db
+   97  ls
+   98  cd ..
+   99  cd..
+  100  cd ..
+  101  mongod --storageEngine mmapv1
+  102  nano .env
+  103  docker-compose up
+  104  cd ..
+  105  cd ..
+  106  ls
+  107  cd data
+  108  cd var
+  109  ls
+  110  cd ..
+  111  cd etc
+  112  ls
+  113  cd ..
+  114  ls
+  115  cd dev
+  116  ls
+  117  cd ..
+  118  ls
+  119  cd sys
+  120  ls
+  121  cd dev
+  122  ls
+  123  cd ..
+  124  cd ..
+  125  ls
+  126  cd lib
+  127  ls
+  128  cd modules
+  129  ls
+  130  cd ..
+  131  cd ..
+  132  ls
+  133  cd bin
+  134  ls
+  135  cd ..
+  136  ls
+  137  cd dev
+  138  ls
+  139  cd ..
+  140  ls
+  141  cd mnt
+  142  ls
+  143  cd ..
+  144  cd mnt
+  145  ls
+  146  cd ..
+  147  cd root
+  148  ls
+  149  cd ..
+  150  cd srv
+  151  ls
+  152  cd ..
+  153  ls
+  154  cd var
+  155  ls
+  156  cd lib
+  157  ls
+  158  cd mongodb
+  159  ls
+  160  WiredT
+  161  WiredTiger
+  162  rm WiredTiger.lock
+  163  ls
+  164  rm mongod.lock
+  165  ls
+  166  cd ..
+  167  cd ..
+  168  cd ..
+  169  cd home
+  170  cd ko-server/
+  171  docker-compose down
+  172  docker-compose up
+  173  docker-compose down
+  174  nano .env
+  175  docker-compose up
+  176  sudo chown -R mongodb:mongodb /data/mongodb/
+  177  cd ..
+  178  ls
+  179  cd ..
+  180  sudo chown -R mongodb:mongodb /data/mongodb/
+  181  ls
+  182  cdvar
+  183  ls
+  184  cd var
+  185  ls
+  186  cd lib
+  187  ls
+  188  sudo chown -R mongodb:mongodb /mongodb/
+  189  sudo chown -R mongodb:mongodb mongodb/
+  190  cd mongodb/
+  191  ls
+  192  sudo systemctl restart mongodb
+  193  cd ..
+  194  cd ..
+  195  cd ..
+  196  cd home
+  197  cd ko-server/
+  198  docker-compose up
+  199  docker-compose down
+  200  docker-compose up
+  201  mongodb
+  202  mongo
+  203  nano .env
+  204  docker-compose down
+  205  docker-compose up
+  206  docker-compose down
+  207  nano .env
+  208  docker-compose up
+  209  cd ..
+  210  cd ..
+  211  ls
+  212  cd var
+  213  ls
+  214  cd lib
+  215  ls
+  216  cd docker-engine
+  217  ls
+  218  cd ..
+  219  cd mongodb
+  220  ls
+  221  nano mongod.lock
+  222  cd journal/
+  223  ls
+  224  cd ..
+  225  cd..
+  226  nano WiredTiger.lock 
+  227  ls
+  228  cd ..
+  229  cd ..
+  230  ls
+  231  cd backups
+  232  ls
+  233  cd ..
+  234  cd ..
+  235  cd home
+  236  cd ko-server/
+  237  ls
+  238  cd data
+  239  ls
+  240  cd db
+  241  ls
+  242  nano mongod.lock
+  243  rm mongod.lock
+  244  ls
+  245  cd ..
+  246  cd ..
+  247  docker-compose down
+  248  docker-compose up
+  249  docker-compose down
+  250  cd ..
+  251  cd ko-server/
+  252  ls
+  253  cd data
+  254  ls
+  255  rm db/*
+  256  cd db
+  257  ls
+  258  cd diagnostic.data/
+  259  ls
+  260  rm diagnostic.data/*
+  261  cd ..
+  262  rm diagnostic.data/*
+  263  ls
+  264  cd journal
+  265  ls
+  266  rm journal/*
+  267  cd ..
+  268  rm journal/*
+  269  rm journal
+  270  rmdir journal
+  271  rmdir diagnostic.data/
+  272  ls
+  273  cd..
+  274  cd ..
+  275  ls
+  276  cd ..
+  277  ls
+  278  docker-compose down
+  279  docker-compose up
+  280  docker-compose down
+  281  ls
+  282  cd data
+  283  cd db
+  284  ls
+  285  cd ..
+  286  cd ..
+  287  cd data
+  288  ls
+  289  rmdir db/*
+  290  rmdir db
+  291  rm -r  db
+  292  ls
+  293  cd ..
+  294  docker-compose up
+  295  docker-compose down
+  296  ls
+  297  cd  data
+  298  cd db
+  299  ls
+  300  cd..
+  301  cd 
+  302  cd 
+  303  cd ..
+  304  ls
+  305  ls
+  306  cd home
+  307  ls
+  308  cd ko-server/
+  309  ls
+  310  cd dtaa
+  311  ls
+  312  cd data
+  313  ls
+  314  rm -r db
+  315  ls
+  316  cd ..
+  317  docker-compose up
+  318  docker-compose down
+  319  cd data
+  320  rm -r db
+  321  cd ..
+  322  ps aux | grep mongo
+  323  docker-compose up
+  324  docker-compose down
+  325  cd data
+  326  rm -r db
+  327  ls
+  328  cd ..
+  329  nano .env
+  330  docker-compose up
+  331  docker-compose down
+  332  cd  home
+  333  cd data
+  334  rm -r db
+  335  cd ..
+  336  nano .env
+  337  clear
+  338  docker-compose up
+  339  nano etc/mongodb.conf
+  340  nano /etc/mongodb.conf
+  341  docker-compose down
+  342  nano /etc/mongodb.conf
+  343  docker-compose up
+  344  cd data
+  345  rm -r db
+  346  cd ..
+  347  docker-compose down
+  348  sudo systemctl restart mongodb
+  349  docker-compose up
+  350  docker-compose down
+  351  cd ..
+  352  ls
+  353  cd home
+  354  ls
+  355  ls
+  356  cd ko-server/
+  357  docker-compose up
+  358  history
+  359  cd ..
+  360  history > 
+  361  history > history.txt
+  362  history > history.txt
+  363  ls
+  364  nano history.txt
+  365  ls
+  366  cd ko-server/
+  367  history > history.txt
