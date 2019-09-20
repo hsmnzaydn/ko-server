@@ -219,7 +219,7 @@ async function updateEntry(req, res, next) {
 async function getEntry(req, res, next) {
     var entryId = req.params.entryId
     entrySchema.findOne({_id: entryId}, ['createdDate', 'entryImageUrl', '_id', 'header', 'message', 'price']).populate([{
-        path: 'creator', select: ['name', 'surname', 'nickname', 'phoneNumber']
+        path: 'creator', select: ['name', 'surname', 'nickname', 'phoneNumber', 'isShowPhoneNumber']
     }, {
         path: 'server', select: ['name', '_id']
     }])
