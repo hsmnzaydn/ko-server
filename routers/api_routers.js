@@ -104,5 +104,7 @@ router.post('/secure/users/:userId/events', eventsController.eventsUpdate);
 // Conversation
 conversationController=require('../components/conversation/conversation_controller')
 router.post('/secure/conversations',conversationController.createConversation)
+router.get('/secure/conversations/:conversationId/messages',conversationController.getMessages)
+router.post('/secure/conversations/:conversationId/messages',conversationController.sendMessage)
 
 module.exports = router;

@@ -4,9 +4,10 @@ var Schema = mongoose.Schema;
 
 var message = new Schema(
     {
+        conversationId:{type:String},
         user:{type:mongoose.Schema.Types.ObjectId, ref:"User",default:null},
-        message:{type:String}
-
+        message:{type:String},
+        date:{type:String}
     }
 );
 
