@@ -18,7 +18,7 @@ async function createConversation(req,res,next) {
         {entry: entryId}
     ]}).
     then(async conversation=>{
-        if (conversation == nil) {
+        if (conversation == null) {
 
             var ownerId = await entrySchema.findOne({_id:entryId}).then(async entry=>{
                 return entry.creator._id
