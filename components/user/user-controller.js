@@ -328,13 +328,32 @@ async function getUserMessages(req,res,next) {
     conversationSchema.find({$or: [
         {userId: userId},
         {ownerId: userId}]
-    }, ['entry']).populate({
+    }, ['userId', 'ownerId', 'entry']).populate({
         path:'entry', select:['_id', 'header', 'entryImageUrl', 'creator'],
         populate: {
             path: 'creator', select: ['_id', 'nickname']
         }
+    }).populate({
+        path:'userId', select:['nickname']
     }).then(async conversations=>{
 
+/*
+        conversations.forEach(element => {
+            if (element.ownerId == userId){
+                userSchema.findOne({_id:element.userId}).then(async user => {
+                    element.entry.creator._id = user._id
+                    element.entry.creator.nickname = user.nickname
+                    console.log(user.nickname)
+                })
+            }else {
+                userSchema.findOne({_id:element.ownerId}).then(async user => {
+                    element.entry.creator._id = user._id
+                    element.entry.creator.nickname = user.nickname
+                    console.log(user.nickname)
+                })
+            }
+        });*/
+        
         res.status(global.OK_CODE).send({
             code:global.OK_CODE,
             conversations:conversations
