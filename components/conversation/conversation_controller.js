@@ -12,8 +12,8 @@ module.exports={
 async function createConversation(req,res,next) {
     var userId=res.userId.toString()
     var entryId = req.body.entryId
-
-    conversationSchema.find({$or: [
+    console.log("girdi")
+    conversationSchema.findOne({$and: [
         {userId: userId},
         {entry: entryId}
     ]}).
@@ -29,11 +29,17 @@ async function createConversation(req,res,next) {
                 entry:entryId
             })
             conversationModel.save()
+
+            res.status(global.OK_CODE).send({
+                code:global.OK_CODE,
+                conversationId:conversationModel._id
+            })
+        }else {
+            res.status(global.OK_CODE).send({
+                code:global.OK_CODE,
+                conversationId:conversation._id
+            })
         }
-        res.status(global.OK_CODE).send({
-            code:global.OK_CODE,
-            conversationId:conversationModel._id
-        })
     }).catch(next)
     
 
@@ -68,12 +74,28 @@ async function sendMessage(req,res,next) {
         })
         messageModel.save()
     
-        userSchema.findOne({_id:senderUserId}).then(async user=>{
+        userSchema.findOne({_id:senderUserId}).populate({
+            path: 'installedApplication'
+        }).then(async user=>{
             var sendMessageModel = {
-                senderUser: senderUserId,
+                senderUser: user.nickname,
+                conversationId: conversationId,
                 message: message
             }
-            await firebaseUtility.sendMessageNotificationToDevice(sendMessageModel, "Yeni bir mesajınız var", user.nickname+" kişisinden mesaj var", user.installedApplication.pnsToken)
+            conversationSchema.findOne({_id:conversationId}).then(async conversation=>{
+                var otherId = ""
+                if (conversation.ownerId == senderUserId) {
+                    otherId = conversation.userId
+                }else {
+                    otherId = conversation.ownerId
+                }
+                
+                userSchema.findOne({_id:otherId}).populate({
+                    path: 'installedApplication'
+                }).then(async otherUser=>{
+                    await firebaseUtility.sendMessageNotificationToDevice(sendMessageModel, "Yeni bir mesajınız var", user.nickname+" kişisinden mesaj var", otherUser.installedApplication.pnsToken)
+                })
+            })
         })
 
         res.status(global.OK_CODE).send({

@@ -10,6 +10,7 @@ firebase = require('../../Utils/firebase')
 entryEnums = require('../../components/entry/enums')
 notificationSchema = require('../../components/notification/model/notification-model')
 const conversationSchema=require('../conversation/model/conversation_model')
+const entrySchema=require('../entry/model/entry-model')
 
 module.exports = {
     registerUser,
@@ -326,18 +327,17 @@ async function getUserMessages(req,res,next) {
 
     conversationSchema.find({$or: [
         {userId: userId},
-        {ownerId: userId}
-    ]
-    })
-    .populate({
-        path: 'conversations', select:['_id','user','entry'],
-        populate: {path: 'user', select:['_id','nickname']}
+        {ownerId: userId}]
+    }, ['entry']).populate({
+        path:'entry', select:['_id', 'header', 'entryImageUrl', 'creator'],
+        populate: {
+            path: 'creator', select: ['_id', 'nickname']
+        }
     }).then(async conversations=>{
 
         res.status(global.OK_CODE).send({
             code:global.OK_CODE,
             conversations:conversations
         })
-
     }).catch(next)
 }

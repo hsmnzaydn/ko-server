@@ -337,7 +337,7 @@ async function sendMessage(req,res,next) {
                    }).catch(next)
             }
             var sendMessageModel = {
-                senderUser: user._id,
+                senderUser: user.nickname,
                 message: message
             }
 
